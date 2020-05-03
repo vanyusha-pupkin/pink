@@ -1,7 +1,18 @@
 
 //------------------------OpenSans-------------------------
 
-//font regular
+// font Light
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src:  local('Open Sans Light'), local('OpenSans-Light'),
+        url("../fonts/OpenSans-Light.woff2") format("woff2"),
+        url("../fonts/OpenSans-Light.woff") format("woff");
+}
+
+//font Regular
 @font-face {
   font-family: "Open Sans";
   font-style: normal;
@@ -12,38 +23,24 @@
         url("../fonts/OpenSans.woff") format("woff");
 }
 
-// font light
+// font SemiBold
 @font-face {
   font-family: "Open Sans";
   font-style: normal;
-  font-weight: 300;
+  font-weight: 600;
   font-display: swap;
-  src:  local('Open Sans Light'), local('OpenSans-Light'),
-        url("../fonts/OpenSans-light.woff2") format("woff2"),
-        url("../fonts/OpenSans-light.woff") format("woff");
+  src:  local('Open Sans SemiBold'), local('OpenSans-SemiBold'),
+        url("../fonts/OpenSans-SemiBold.woff2") format("woff2"),
+        url("../fonts/OpenSans-SemiBold.woff") format("woff");
 }
 
-// font bold
+// font Bold
 @font-face {
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 700;
   font-display: swap;
   src:  local('Open Sans Bold'), local('OpenSans-Bold'),
-        url("../fonts/OpenSans-bold.woff2") format("woff2"),
-        url("../fonts/OpenSans-bold.woff") format("woff");
-}
-
-
-//------------------------OpenSansSemi-------------------------
-
-// font bold
-@font-face {
-  font-family: "Open Sans Semi";
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src:  local('Open Sans Semi Bold'), local('OpenSansSemi-Bold'),
-        url("../fonts/OpenSansSemi-bold.woff2") format("woff2"),
-        url("../fonts/OpenSansSemi-bold.woff") format("woff");
+        url("../fonts/OpenSans-Bold.woff2") format("woff2"),
+        url("../fonts/OpenSans-Bold.woff") format("woff");
 }
