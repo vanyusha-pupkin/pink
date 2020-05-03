@@ -1,25 +1,28 @@
-// $bg-header: #000000;
-// $bg-darkgrey-modile: #242424;
-// $bg-darkgrey: #353535;
-// $bg-lightgrey: #f8f5f2;
-// $bg-footer: #292929;
+$black: #000000;
+$white: #ffffff;
+$blue-dark : #283645;
+$pink : #d22856;
+$red: #f25b26;
+$green: #3dc644;
+$green-bark: #2aab6d;
+$grey: #efefef;
+$form-grey: #e5e5e5;
 
-// $bg-main-nav: #826550;
+$bg-grey: #f2f2f2;
+$bg-white: $white;
+$bg-header: rgba(255, 255, 255, 0.3);
+$bg-main-image: #1d2631;
 
-// $font-light: #f7f4f1;
+$mobile-width: 320px;
+$tablet-width: 660px;
+$desktop-width: 960px;
 
-// $mobile-width: 320px;
-// $tablet-width: 640px;
-// $desktop-width: 960px;
+$mobile-padding: 20px;
+$tablet-padding: 20px;
+$desktop-padding: 10px;
 
+$bp-tablet: $tablet-width;             //break point for tablet version
+$bp-desktop: $desktop-width + 20px;    //break point for desktop version
 
-// $bp-tablet: 768px;      //break point for tablet version
-// $bp-desktop: 1200px;    //break point for desktop version
-
-// $mobile-width-only: $bp-tablet - 1px;
-
-// $mobile-padding: 20px;
-// $tablet-padding: 65px;
-
-// $retina-dpi: 144dpi;
-// $retina-dppx: 1.5dppx;
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;
