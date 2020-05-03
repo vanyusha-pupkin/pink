@@ -1,0 +1,51 @@
+
+@charset "utf-8";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  // min-width: 320px;
+
+  // font-family: "PT Sans Narrow", "Arial", sans-serif;
+  // font-size: 18px;
+  // line-height: 27px;
+  // font-weight: 400;
+  // font-style: normal;
+  // color: $font-light;
+
+  // background-color: $bg-darkgrey-modile;
+
+  // overflow-x: hidden;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+
+}

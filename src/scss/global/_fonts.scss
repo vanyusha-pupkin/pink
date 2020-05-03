@@ -1,0 +1,22 @@
+
+//font regular
+@font-face {
+  font-family: "--name font--";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src:  local('--name font--'), local('--name font--'),
+        url("../fonts/--name file font--.woff2") format("woff2"),
+        url("../fonts/--name file font--.woff") format("woff");
+}
+
+// font bold
+@font-face {
+  font-family: "--name font--";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src:  local('--name font-- Bold'), local('--name font--Bold'),
+        url("../fonts/--name file font--.woff2") format("woff2"),
+        url("../fonts/--name file font--.woff") format("woff");
+}
