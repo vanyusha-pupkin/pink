@@ -1,17 +1,3 @@
-$black: #000000;
-$white: #ffffff;
-$blue-dark : #283645;
-$pink : #d22856;
-$red: #f25b26;
-$green: #3dc644;
-$green-bark: #2aab6d;
-$grey: #efefef;
-$form-grey: #e5e5e5;
-
-$bg-grey: #f2f2f2;
-$bg-white: $white;
-$bg-header: rgba(255, 255, 255, 0.3);
-$bg-main-image: #1d2631;
 
 $mobile-width: 320px;
 $tablet-width: 660px;
@@ -26,3 +12,33 @@ $bp-desktop: $desktop-width + 20px;    //break point for desktop version
 
 $retina-dpi: 144dpi;
 $retina-dppx: 1.5dppx;
+
+$font-family-base: "Open Sans", "Arial", sans-serif;
+$font-size-base: 18px;
+$line-height-base: 30px;
+$font-weight-base: 400;
+
+$black: #000000;
+$white: #ffffff;
+$pink : #d22856;
+$blue-dark : #283645;
+$red: #f25b26;
+$green: #3dc644;
+$green-bark: #2aab6d;
+$grey: #efefef;
+
+
+$bg-color-body: $white;
+$bg-color-header: rgba(255, 255, 255, 0.3);
+$bg-color-main-image: #1d2631;
+$bg-color-grey: #f2f2f2;
+$bg-color-white: $white;
+$bg-color-icon: $pink;
+
+$border-color-input: #e5e5e5;
+$border-color-input--hover: $blue-dark;
+$border-color-input--active: $pink;
+
+$font-color-base: $blue-dark;
+$font-color-label: $pink;
+$font-color-legend: $pink;
