@@ -82,6 +82,34 @@ const path = {
 
 function html(){
   return src(path.src.html)
+      // .pipe(plumber())
+
+      .pipe(plumber(
+        {errorHandler:
+
+             notify.onError({
+                title: "HTML Error",
+                message: "<%= error.message %>",
+                sound: "Blow"
+            })
+
+        }
+        ))
+
+        // .pipe(
+        //     sass()
+        //     .on('error',
+
+        //      notify.onError({
+        //         title: "Sass Error",
+        //         message: "<%= error.message %>",
+        //         sound: "Blow"
+        //     })
+
+        //      )
+        // )
+
+
       .pipe(fileinclude({
         prefix: '@@',
         basepath: '@file'
@@ -96,15 +124,31 @@ function html(){
 
 function style(){
   return src(path.src.scss)
+
+      .pipe(plumber(
+        {errorHandler:
+
+             notify.onError({
+                title: "SCSS Error",
+                message: "<%= error.message %>",
+                sound: "Blow"
+            })
+
+        }
+        ))
+
       .pipe(gulpif(isDev, sourcemaps.init()))
         .pipe(sassGlob())
         .pipe(sass.sync({outputStyle: 'expanded'})
+
           // .on('error', sass.logError))
           // .on('error', notify.onError('Error: <%= error.message %>')))
-          .on("error", notify.onError({
-              message: "Error: <%= error.message %>",
-              title: "SCSS Error"
-          })))
+
+          // .on("error", notify.onError({
+          //     message: "Error: <%= error.message %>",
+          //     title: "SCSS Error"
+          // }))
+          )
 
         .pipe(postcss([
           autoprefixer(),
@@ -121,6 +165,7 @@ function style(){
 
 function js(){
   return src(path.src.js)
+      .pipe(plumber())
       // .pipe(rigger())
       .pipe(dest(path.build.js))
       .pipe(rename({ suffix: ".min" }))
@@ -154,7 +199,19 @@ function webp(){
 function svgsprite(){
   return src(path.src.svgSprite)
       .pipe(plumber())
-      .pipe(svgmin())
+
+      .pipe(svgmin({
+          plugins: [{
+              removeViewBox: false
+            },
+            {
+               removeAttrs: {
+                attrs: 'fill'
+              }
+            }]
+      }))
+
+      // .pipe(svgmin())
       .pipe(svgstore({inlineSvg: true}))
       .pipe(rename("sprite.svg"))
       .pipe(dest('src/img/svg-sprite'));
@@ -171,6 +228,7 @@ function svgscss(){
 
 function font(){
   return src(path.src.fonts)
+      .pipe(plumber())
       .pipe(newer(path.build.fonts))
       .pipe(dest(path.build.fonts))
       .pipe(browserSync.stream());
@@ -178,6 +236,7 @@ function font(){
 
 function fontsConvertToWoff(){
   return src(path.src.fontsForConvert)
+      .pipe(plumber())
       .pipe(ttf2woff())
       .pipe(newer(path.build.fonts))
       .pipe(dest(path.build.fonts))
@@ -186,6 +245,7 @@ function fontsConvertToWoff(){
 
 function fontsConvertToWoff2(){
   return src(path.src.fontsForConvert)
+      .pipe(plumber())
       .pipe(ttf2woff2())
       .pipe(newer(path.build.fonts))
       .pipe(dest(path.build.fonts))

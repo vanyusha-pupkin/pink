@@ -1,20 +1,18 @@
 .container {
-  // width: $mobile-width;
-  // margin: 0 auto;
-  width: auto;
+  width: $mobile-width;
+  margin: 0 auto;
+  // width: auto;
 
+  background-color: #005555;
 
-  @media (min-width: $bp-tablet) {
-    // width: $tablet-width;
-    // margin: 0 auto;
+  @media ($bp-tablet) {
+    width: $tablet-width;
+    margin: 0 auto;
     // width: auto;
-    width: 100%;
-    padding: 0 $tablet-padding;
   }
 
-  @media (min-width: $bp-desktop) {
+  @media ($bp-desktop) {
     width: $desktop-width;
     margin: 0 auto;
-    padding: 0;
   }
 }

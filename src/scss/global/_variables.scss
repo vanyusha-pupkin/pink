@@ -1,14 +1,18 @@
 
 $mobile-width: 320px;
 $tablet-width: 660px;
-$desktop-width: 960px;
+$desktop-width: 940px;
+$mobile-tablet-width-only: $desktop-width + 40px - 1px;
 
 $mobile-padding: 20px;
 $tablet-padding: 20px;
 $desktop-padding: 10px;
 
-$bp-tablet: $tablet-width;             //break point for tablet version
-$bp-desktop: $desktop-width + 20px;    //break point for desktop version
+// $bp-tablet: $tablet-width;             //break point for tablet version
+// $bp-desktop: $desktop-width;    //break point for desktop version
+
+$bp-tablet: "min-width: #{$tablet-width}";
+$bp-desktop: "min-width: #{$desktop-width + 40px}";
 
 $retina-dpi: 144dpi;
 $retina-dppx: 1.5dppx;
@@ -20,7 +24,7 @@ $font-weight-base: 400;
 
 $black: #000000;
 $white: #ffffff;
-$pink : #d22856;
+$pink: #d22856;
 $blue-dark : #283645;
 $red: #f25b26;
 $green: #3dc644;
@@ -29,8 +33,9 @@ $grey: #efefef;
 
 
 $bg-color-body: $white;
-$bg-color-header: rgba(255, 255, 255, 0.3);
-$bg-color-main-image: #1d2631;
+$bg-color-header: rgba(0, 0, 0, 0.3);
+$bg-color-menu-items: $blue-dark;
+$bg-color-main-image: $blue-dark;
 $bg-color-grey: #f2f2f2;
 $bg-color-white: $white;
 $bg-color-icon: $pink;

@@ -1,0 +1,157 @@
+
+.main-nav {}
+
+.main-nav__toggle {
+  position: absolute;
+  top: 21px;
+  right: 24px;
+
+  width: 50px;
+  height: 24px;
+
+
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+
+  @media ($bp-tablet) {
+    top: 45px;
+  }
+
+  @media ($bp-desktop) {
+    display: none;
+  }
+}
+
+.main-nav__toggle-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  fill: $white;
+
+  &:hover {
+    fill: $pink;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media ($bp-desktop) {
+    display: none;
+  }
+}
+
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  @media ($bp-desktop) {
+    display: flex;
+  }
+}
+
+.main-nav__item {
+  @media ($bp-desktop) {
+    margin-left: 85px;
+
+    &:first-child {
+      margin: 0;
+    }
+  }
+}
+
+.main-nav__item a {
+  display: block;
+
+  padding: 15px 0;
+
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  color: $white;
+
+  border-top: 1px solid #485461;
+  border-bottom: 1px solid #000000;
+  background-color: $bg-color-menu-items;
+
+  @media ($bp-desktop) {
+    font-weight: 400;
+
+    border: none;
+    background-color: transparent;
+
+    &[href] {
+
+      &:hover {
+        color: $pink;
+      }
+
+      &:active {
+        color: $white;
+        opacity: 0.3;
+      }
+    }
+  }
+}
+
+
+@media (max-width: $mobile-tablet-width-only) {
+
+  .main-nav--closed {
+
+    .main-nav__list {
+      display: none;
+    }
+
+    .main-nav__toggle-icon {
+      &--cross {
+        display: none;
+      }
+      &--burger {
+        display: block;
+        width: 50px;
+        height: 24px;
+
+      }
+    }
+  }
+
+  .main-nav--opened {
+
+    .main-nav__toggle {
+      right: 24px;
+    }
+
+    .main-nav__toggle-icon {
+      &--cross {
+        display: block;
+        width: 24px;
+        height: 23px;
+
+      }
+      &--burger {
+        display: none;
+      }
+    }
+
+  }
+
+  .main-nav--nojs {
+    .main-nav__list {
+      display: block;
+    }
+  }
+
+  .main-nav--nojs .main-nav__toggle {
+    display: none;
+  }
+
+}
