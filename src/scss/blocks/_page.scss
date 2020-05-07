@@ -10,5 +10,13 @@
 
   background-color: $bg-color-body;
 
-  // overflow-x: hidden;
+  overflow-x: hidden;
+}
+
+.page__header {
+  margin-bottom: -66px;
+
+  @media ($bp-tablet) {
+    margin-bottom: -110px;
+  }
 }

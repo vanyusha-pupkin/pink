@@ -4,9 +4,9 @@ $tablet-width: 660px;
 $desktop-width: 940px;
 $mobile-tablet-width-only: $desktop-width + 40px - 1px;
 
-$mobile-padding: 20px;
-$tablet-padding: 20px;
-$desktop-padding: 10px;
+$padding-mobile: 20px;
+$padding-tablet: 20px;
+$padding-desktop: 10px;
 
 // $bp-tablet: $tablet-width;             //break point for tablet version
 // $bp-desktop: $desktop-width;    //break point for desktop version
@@ -47,3 +47,5 @@ $border-color-input--active: $pink;
 $font-color-base: $blue-dark;
 $font-color-label: $pink;
 $font-color-legend: $pink;
+
+$timing-function-menu: 0.3s;

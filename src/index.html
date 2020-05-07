@@ -4,7 +4,7 @@
     <!-------------------- head -------------------->
 
 @@include('html/_head.html', {
-  'title': 'Pink - Главная'
+  'title': 'Pink - Главная страница'
 })
 
   <body class="page">
@@ -17,7 +17,7 @@
     <!------------------- header ------------------->
 
 @@include('html/_header.html', {
-  'active-index': 'site-list__item--active',
+  'active-index': 'main-nav__item--active',
   'active-photo': '',
   'active-form': '',
 
@@ -34,8 +34,131 @@
 
     <main class="page-main">
 
-      <h1 class="visually-hidden">Барбершоп «Бородинский» - истинно мужская классика</h1>
+      <h1 class="visually-hidden">Pink - приложение для вашего телефона</h1>
 
+      <section class="intro">
+        <h2 class="visually-hidden">Скачайте приложение Pink!</h2>
+        <div class="container">
+          <div class="intro__wrapper">
+
+            <p class="intro__image">
+              <picture>
+                <source media="(min-width: 980px)" srcset="img/index/iphone-hand-desktop@1x.png 1x, img/index/iphone-hand-desktop@2x.png 2x">
+                <source media="(min-width: 660px)" srcset="img/index/iphone-hand-tablet@1x.png 1x, img/index/iphone-hand-tablet@2x.png 2x">
+                <img src="img/index/iphone-hand-mobile@1x.png" srcset="img/index/iphone-hand-mobile@2x.png 2x" alt="Приложение Pink на телефоне">
+              </picture>
+            </p>
+            <div class="intro__inner">
+              <p class="intro__slogan">Взгляните на жизнь иначе!</p>
+              <a class="intro__button button button--white">Скачать приложение</a>
+              <ul class="intro__list-icons">
+                <li class="intro__item">
+                  <a class="intro__link" href="#" title="AppStore">
+                    <svg class="intro__icon intro__icon--apple" width="47" height="56">
+                      <use xlink:href="#logo-apple"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="intro__item">
+                  <a class="intro__link" href="#" title="Google Play">
+                    <svg class="intro__icon intro__icon--android" width="43" height="47">
+                      <use xlink:href="#logo-android"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="intro__item">
+                  <a class="intro__link" href="#" title="Windows Phone Store">
+                    <svg class="intro__icon intro__icon--microsoft" width="44" height="41">
+                      <use xlink:href="#logo-microsoft"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+
+              <p class="intro__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+
+            </div> <!-- intro__inner -->
+
+          </div> <!-- intro__wrapper -->
+
+        </div> <!-- container -->
+      </section>
+
+      <section class="advantages">
+        <h2 class="visually-hidden">Главные достоинства нашего приложения</h2>
+
+        <header class="advantages__header">
+          <div class="container">
+            <p class="advantages__slogan">
+              <span>Устали от серости мегаполиса?</span>
+              <span>Нам есть, что вам <br> предложить!</span>
+            </p>
+          </div> <!-- container -->
+        </header>
+
+        <div class="advantages__body">
+          <div class="container">
+            <div class="advantages__wrapper">
+
+              <ul class="advantages__list">
+                <li class="advantages__item advantages__item--cheer-up">
+                  <h3 class="advantages__title">Поднимает настроение</h3>
+                  <p class="advantages__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+                </li>
+
+                <li class="advantages__item advantages__item--change--world">
+                  <h3 class="advantages__title">Меняет мир вокруг</h3>
+                  <p class="advantages__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+                </li>
+
+                <li class="advantages__item advantages__item--make-friends">
+                  <h3 class="advantages__title">Заводит новых друзей</h3>
+                  <p class="advantages__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+                </li>
+              </ul>
+
+            </div> <!-- advantages__wrapper -->
+          </div> <!-- container -->
+        </div> <!-- advantages__body -->
+      </section>
+
+      <section class="effect">
+        <div class="container">
+          <div class="effect__wrapper">
+            <h2 class="effect__title">Эффект <br> на&nbsp;24&nbsp;часа!</h2>
+            <p class="effect__text">Британские ученые провели исследования и доказали, что положительный эффект от&nbsp;использования приложения длится целые сутки!</p>
+            <a class="effect__link" href="#" target="_blank">Узнать больше об исследовании</a>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="reviews">
+        <div class="container">
+          <div class="reviews__wrapper">
+            <h2 class="visually-hidden">Отзывы о нашем приложении</h2>
+
+            <ul class="reviews__list">
+              <li class="reviews__item">
+                <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+                <p class="reviews__author">
+                  <span class="reviews__author-name">Николай Петров</span>
+                  <span class="reviews__author-more-info">25 лет, водитель трамвая</span>
+                </p>
+              </li>
+            </ul>
+
+            <ul class="reviews__list-dots">
+              <li><button class="reviews__dot reviews__dot--active" type="button">1</button></li>
+              <li><button class="reviews__dot" type="button">2</button></li>
+              <li><button class="reviews__dot" type="button">3</button></li>
+            </ul>
+            <button class="reviews__button-prev" type="button">Предыдущий</button>
+            <button class="reviews__button-next" type="button">Следующий</button>
+
+          </div> <!-- reviews__wrapper -->
+        </div> <!-- container -->
+      </section>
 
     </main>
 

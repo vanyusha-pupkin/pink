@@ -1,4 +1,93 @@
 .button {
+  display: inline-block;
+  padding: 10px 0;
 
+  font: inherit;
+  font-size: 18px;
+  text-align: center;
 
+  border: none;
+  cursor: pointer;
+
+  transition: background-color 0.7s, color 0.7s;
+
+  &--white {
+    width: 100%;
+
+    font-weight: 700;
+
+    border: 3px solid $white;
+    border-radius: 28px;
+
+    &:hover {
+      color: $pink;
+      background-color: $white;
+    }
+
+    &:active {
+      color: rgba(210, 40, 86, 0.3);
+      background-color: $white;
+    }
+
+  }
+
+  &--green {
+    width: 296px;
+
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $white;
+
+    border-radius: 3px;
+    background-color: $green-bark;
+
+    &:hover {
+      color: $white;
+      background-color: #1c9b5e;
+    }
+
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+      background-color: #1c9b5e;
+    }
+  }
+
+  &--ping {
+    width: 280px;
+
+    color: $pink;
+
+    border: 3px solid $pink;
+    border-radius: 28px;
+
+    &:hover {
+      color: $white;
+      background-color: $pink;
+    }
+
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+      background-color: $pink;
+    }
+  }
+
+  &--grey{
+    width: 280px;
+
+    color: rgba(40, 54, 69, 0.1);
+
+    border: 3px solid rgba(40, 54, 69, 0.1);
+    border-radius: 28px;
+
+    &:hover {
+    color: rgba(40, 54, 69, 0.3);
+    border: 3px solid rgba(40, 54, 69, 0.3);
+    }
+
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+      border: 3px solid rgba(40, 54, 69, 0.3);
+      background-color: rgba(40, 54, 69, 0.3);
+    }
+  }
 }

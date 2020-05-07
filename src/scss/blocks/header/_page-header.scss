@@ -1,9 +1,11 @@
 
 .page-header {
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
+  // position: absolute;
+  // top: 0;
+  // right: 0;
+  // left: 0;
+  position: relative;
+  z-index: 2;
 
   background-color: $bg-color-header;
 }
@@ -20,7 +22,8 @@
 
 .page-header__logo {
   display: block;
-  padding: 22px $mobile-padding;
+  padding: 22px 0;
+  padding-left: $padding-mobile;
 
   @media ($bp-tablet) {
     padding-top: 27px;
@@ -37,6 +40,8 @@
 
   fill: $white;
 
+  transition: $timing-function-menu;
+
   .page-header__logo[href] & {
 
     &:hover {
@@ -44,6 +49,7 @@
     }
 
     &:active {
+      fill: $white;
       opacity: 0.3;
     }
   }
@@ -84,6 +90,7 @@
 }
 
 .page-header--open-menu {
+  background-color: $bg-color-menu-items;
   .page-header__logo {
     padding-bottom: 24px;
 
@@ -91,14 +98,15 @@
       padding-bottom: 42px;
     }
 
-    @media ($bp-desktop) {
-      padding-bottom: 43px;
-    }
+    // @media ($bp-desktop) {
+    //   padding-bottom: 43px;
+    // }
 
   }
 }
 
 .page-header--nojs {
+  background-color: $bg-color-menu-items;
   .page-header__logo {
     padding-bottom: 24px;
 
@@ -106,9 +114,9 @@
       padding-bottom: 42px;
     }
 
-    @media ($bp-desktop) {
-      padding-bottom: 43px;
-    }
+    // @media ($bp-desktop) {
+    //   padding-bottom: 43px;
+    // }
 
   }
 }

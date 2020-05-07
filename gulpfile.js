@@ -7,7 +7,7 @@ const
 
   sass              = require('gulp-sass'),                     //конвертирует scss в css
   sassGlob          = require('gulp-sass-glob'),                //объединяет сразу несколько scss файлов по маске
-  //gcmq              = require('gulp-group-css-media-queries'),  //группирует медиа запросы в css файлах
+  gcmq              = require('gulp-group-css-media-queries'),  //группирует медиа запросы в css файлах
   mqpacker          = require('css-mqpacker'),                  //группирует медиа запросы в css файлах
   csso              = require('gulp-csso'),                     //минифицирует css файлы
   postcss           = require('gulp-postcss'),                  //нужен для работы autoprefixer
@@ -149,10 +149,11 @@ function style(){
           //     title: "SCSS Error"
           // }))
           )
-
+        // .pipe(gcmq())
         .pipe(postcss([
           autoprefixer(),
-          mqpacker({sort: true})
+          // mqpacker({sort: true})
+          mqpacker()
         ]))
         .pipe(dest(path.build.css))
         .pipe(csso())
@@ -203,12 +204,13 @@ function svgsprite(){
       .pipe(svgmin({
           plugins: [{
               removeViewBox: false
-            },
-            {
-               removeAttrs: {
-                attrs: 'fill'
-              }
-            }]
+            }
+            // ,{
+            //    removeAttrs: {
+            //     attrs: 'fill'
+            //   }
+            // }
+            ]
       }))
 
       // .pipe(svgmin())
