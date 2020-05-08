@@ -132,31 +132,158 @@
         </div>
       </section>
 
-
       <section class="reviews">
         <div class="container">
-          <div class="reviews__wrapper">
+          <div class="reviews__wrapper slider">
             <h2 class="visually-hidden">Отзывы о нашем приложении</h2>
 
-            <ul class="reviews__list">
-              <li class="reviews__item">
-                <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-                <p class="reviews__author">
-                  <span class="reviews__author-name">Николай Петров</span>
-                  <span class="reviews__author-more-info">25 лет, водитель трамвая</span>
-                </p>
-              </li>
-            </ul>
+            <div class="reviews__inner slider__inner">
 
-            <ul class="reviews__list-dots">
-              <li><button class="reviews__dot reviews__dot--active" type="button">1</button></li>
-              <li><button class="reviews__dot" type="button">2</button></li>
-              <li><button class="reviews__dot" type="button">3</button></li>
+              <ul class="reviews__list slider__list">
+
+                <li class="reviews__item slider__slide">
+                  <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+                  <p class="reviews__author">
+                    <span class="reviews__author-name">Николай Петров</span>
+                    <span class="reviews__author-more-info">25 лет, водитель трамвая</span>
+                  </p>
+                </li>
+
+                <li class="reviews__item slider__slide">
+                  <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+                  <p class="reviews__author">
+                    <span class="reviews__author-name">Николай Петров</span>
+                    <span class="reviews__author-more-info">25 лет, водитель трамвая</span>
+                  </p>
+                </li>
+
+                <li class="reviews__item slider__slide">
+                  <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+                  <p class="reviews__author">
+                    <span class="reviews__author-name">Николай Петров</span>
+                    <span class="reviews__author-more-info">25 лет, водитель трамвая</span>
+                  </p>
+                </li>
+
+              </ul>
+
+            </div> <!-- reviews__inner -->
+
+            <ul class="slider__controls">
+              <li><button class="slider__control  slider__control--1 slider__control--active" type="button">1</button></li>
+              <li><button class="slider__control  slider__control--1" type="button">2</button></li>
+              <li><button class="slider__control  slider__control--1" type="button">3</button></li>
             </ul>
-            <button class="reviews__button-prev" type="button">Предыдущий</button>
-            <button class="reviews__button-next" type="button">Следующий</button>
+            <button class="slider__prev" type="button">Предыдущий</button>
+            <button class="slider__next" type="button">Следующий</button>
 
           </div> <!-- reviews__wrapper -->
+        </div> <!-- container -->
+      </section>
+
+      <section class="price">
+      <h2 class="visually-hidden">Таблица тарифов на наше приложение</h2>
+        <div class="container">
+          <div class="price__wrapper slider">
+            <div class="price__inner slider__inner">
+
+              <table class="price__table table slider__list slider__list--table">
+
+                <thead class="table__header">
+                  <tr class="table__row table__row--header">
+                    <th class="table__cell table__cell--hidden"></th>
+                    <th class="table__cell table__cell--header">
+                      <span class="price__tariff">База</span>
+                      <span class="price__price">1,99 USD</span>
+                    </th>
+                    <th class="table__cell table__cell--header price__hit">
+                      <span class="price__tariff">Стандарт</span>
+                      <span class="price__price">3,99 USD</span>
+                    </th>
+                    <th class="table__cell table__cell--header">
+                      <span class="price__tariff">Анлим</span>
+                      <span class="price__price">9,99 USD</span>
+                    </th>
+                  </tr>
+                </thead>
+
+                <tbody>
+                  <tr class="table__row table__row--body">
+                    <td class="table__cell table__cell--first">Розовый фильтр</td>
+                    <td class="table__cell table__cell--body">
+                      <span class="price__optional">Розовый фильтр</span>
+                      <svg class="price__icon-yes" width="31" height="21">
+                        <use xlink:href="#icon-yes"></use>
+                      </svg>
+                    </td>
+                    <td class="table__cell table__cell--body">
+                      <span class="price__optional">Розовый фильтр</span>
+                      <svg class="price__icon-yes" width="31" height="21">
+                        <use xlink:href="#icon-yes"></use>
+                      </svg>
+                    </td>
+                    <td class="table__cell table__cell--body">
+                      <span class="price__optional">Розовый фильтр</span>
+                      <svg class="price__icon-yes" width="31" height="21">
+                        <use xlink:href="#icon-yes"></use>
+                      </svg>
+                    </td>
+                  </tr>
+                  <tr class="table__row table__row--body">
+                    <td class="table__cell table__cell--first">Смайлики</td>
+                    <td class="table__cell table__cell--body">
+                      <span class="price__optional">Смайлики</span>
+                      <svg class="price__icon-no" width="27" height="26">
+                        <use xlink:href="#icon-no"></use>
+                      </svg>
+                    </td>
+                    <td class="table__cell table__cell--body">
+                      <span class="price__optional">Смайлики</span>
+                      <svg class="price__icon-yes" width="31" height="21">
+                        <use xlink:href="#icon-yes"></use>
+                      </svg>
+                    </td>
+                    <td class="table__cell table__cell--body">
+                      <span class="price__optional">Смайлики</span>
+                      <svg class="price__icon-yes" width="31" height="21">
+                        <use xlink:href="#icon-yes"></use>
+                      </svg>
+                    </td>
+                  </tr>
+                  <tr class="table__row table__row--body">
+                    <td class="table__cell table__cell--first">Комментарии</td>
+                    <td class="table__cell table__cell--body">
+                      <span class="price__optional">Комментарии</span>
+                      <svg class="price__icon-no" width="27" height="26">
+                        <use xlink:href="#icon-no"></use>
+                      </svg>
+                    </td>
+                    <td class="table__cell table__cell--body">
+                      <span class="price__optional">Комментарии</span>
+                      <svg class="price__icon-no" width="27" height="26">
+                        <use xlink:href="#icon-no"></use>
+                      </svg>
+                    </td>
+                    <td class="table__cell table__cell--body">
+                      <span class="price__optional">Комментарии</span>
+                      <svg class="price__icon-yes" width="31" height="21">
+                        <use xlink:href="#icon-yes"></use>
+                      </svg>
+                    </td>
+                  </tr>
+                </tbody>
+
+              </table>
+
+            </div> <!-- price__inner -->
+
+            <ul class="price__controls slider__controls slider__controls--table">
+              <li><button class="slider__control  slider__control--1" type="button">1</button></li>
+              <li><button class="slider__control  slider__control--2 slider__control--active" type="button">2</button></li>
+              <li><button class="slider__control  slider__control--3" type="button">3</button></li>
+            </ul>
+
+          </div> <!-- price__wrapper -->
         </div> <!-- container -->
       </section>
 

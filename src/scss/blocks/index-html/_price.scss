@@ -1,0 +1,86 @@
+.price {
+  position: relative;
+
+  background-color: $bg-color-grey;
+
+  @include triangle($bg-color-grey, $bg-color-grey, $bg-color-grey, 32px, 50px, 66px);
+}
+
+.price__wrapper {
+  padding-top: 65px;
+  padding-bottom: 50px;
+
+}
+
+.price__inner {
+  padding: 0 20px;
+  margin-bottom: 45px;
+}
+
+.price__tariff {
+  position: relative;
+  z-index: 0;
+
+  display: block;
+
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  @media ($bp-tablet) {
+    font-size: 16px;
+    line-height: 30px;
+  }
+
+  @media ($bp-desktop) {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
+.price__price {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 300;
+}
+
+.price__optional {
+
+  @media ($bp-tablet) {
+    display: none;
+  }
+
+}
+
+.price__icon-yes {}
+
+.price__icon-no {}
+
+.price__hit {
+  position: relative;
+
+
+  background-clip: padding-box;
+
+  background-image: sassvg("bg-hit-tablet", $pink);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  &::before {
+    content: "ХИТ";
+
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    z-index: 2;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    transform: rotate(-45deg);
+  }
+}
+
+.price__controls {
+
+}

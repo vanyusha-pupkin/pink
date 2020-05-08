@@ -107,118 +107,118 @@
   }
 }
 
-.reviews__list-dots {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+// .reviews__list-dots {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
 
-  margin: 0;
-  padding: 0;
+//   margin: 0;
+//   padding: 0;
 
-  list-style: none;
+//   list-style: none;
 
-  @media ($bp-desktop) {
-    display: none;
-  }
-}
+//   @media ($bp-desktop) {
+//     display: none;
+//   }
+// }
 
-.reviews__dot {
-  display: block;
-  margin: 0 10px;
-  padding: 0;
+// .reviews__dot {
+//   display: block;
+//   margin: 0 10px;
+//   padding: 0;
 
-  width: 6px;
-  height: 6px;
+//   width: 6px;
+//   height: 6px;
 
-  font-size: 0;
-  line-height: 0;
-  font-weight: 0;
+//   font-size: 0;
+//   line-height: 0;
+//   font-weight: 0;
 
-  border: 3px solid transparent;
-  border-radius: 50%;
-  background-color: #bec2c7;
-  cursor: pointer;
+//   border: 3px solid transparent;
+//   border-radius: 50%;
+//   background-color: #bec2c7;
+//   cursor: pointer;
 
-  transition: background 0.3s ease;
+//   transition: background 0.3s ease;
 
-  &:hover {
-    background-color: #7e868f;
-  }
+//   &:hover {
+//     background-color: #7e868f;
+//   }
 
-  &:active {
-    background-color: #e9ebec;
-  }
+//   &:active {
+//     background-color: #e9ebec;
+//   }
 
-  &--active {
-    width: 12px;
-    height: 12px;
-    border: 3px solid $blue-dark;
+//   &--active {
+//     width: 12px;
+//     height: 12px;
+//     border: 3px solid $blue-dark;
 
-    background-color: $white;
-    cursor: default;
+//     background-color: $white;
+//     cursor: default;
 
-    &:hover {
-      background-color: $white;
-    }
+//     &:hover {
+//       background-color: $white;
+//     }
 
-    &:active {
-      background-color: $white;
-    }
-  }
+//     &:active {
+//       background-color: $white;
+//     }
+//   }
 
-}
+// }
 
-.reviews__button-prev,
-.reviews__button-next {
-  display: none;
+// .reviews__button-prev,
+// .reviews__button-next {
+//   display: none;
 
-  @media ($bp-desktop) {
-    position: absolute;
-    top: 215px;
+//   @media ($bp-desktop) {
+//     position: absolute;
+//     top: 215px;
 
-    display: block;
-    width: 22px;
-    height: 41px;
+//     display: block;
+//     width: 22px;
+//     height: 41px;
 
-    font-size: 0;
-    line-height: 0;
-    font-weight: 0;
+//     font-size: 0;
+//     line-height: 0;
+//     font-weight: 0;
 
-    background-color: transparent;
-    background-repeat: no-repeat;
-    background-position: 0 0;
+//     background-color: transparent;
+//     background-repeat: no-repeat;
+//     background-position: 0 0;
 
-    border: none;
-    cursor: pointer;
+//     border: none;
+//     cursor: pointer;
 
-    opacity: 0.3;
-    transition: all 0.3s;
+//     opacity: 0.3;
+//     transition: all 0.3s;
 
-    &:hover {
-      opacity: 0.6;
-    }
+//     &:hover {
+//       opacity: 0.6;
+//     }
 
-    &:active {
-      opacity: 0.1;
-    }
-  }
-}
+//     &:active {
+//       opacity: 0.1;
+//     }
+//   }
+// }
 
-.reviews__button-prev {
+// .reviews__button-prev {
 
-  @media ($bp-desktop) {
-    left: 0;
-    background-image: sassvg("icon-review-arrow-left", #283645);
+//   @media ($bp-desktop) {
+//     left: 0;
+//     background-image: sassvg("icon-review-arrow-left", #283645);
 
-  }
-}
+//   }
+// }
 
 
-.reviews__button-next {
+// .reviews__button-next {
 
-  @media ($bp-desktop) {
-    right: 0;
-    background-image: sassvg("icon-review-arrow-right", #283645);
-  }
+//   @media ($bp-desktop) {
+//     right: 0;
+//     background-image: sassvg("icon-review-arrow-right", #283645);
+//   }
 
-}
+// }
