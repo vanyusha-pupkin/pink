@@ -37,11 +37,8 @@ const
   rename            = require('gulp-rename'),                   //переименовывает файл
   notify            = require('gulp-notify'),
   plumber           = require("gulp-plumber"),
-  htmlValidator     = require('gulp-w3c-html-validator');
-
-// const ghpages = require('gh-pages');
-// var ghPages = require('gh-pages');
-var ghPages = require('gulp-gh-pages');
+  htmlValidator     = require('gulp-w3c-html-validator'),
+  ghPages           = require('gulp-gh-pages');
 
 const isDev     = (process.argv.indexOf('--dev') !== -1);
 const isProd     = !isDev;
@@ -300,27 +297,14 @@ function validateHtml(){
 exports.validateHtml = validateHtml;
 
 
-
-// var deploy      = require('gulp-gh-pages');
-
-// gulp.task('deploy', function () {
-//   return gulp.src("build/**/*")
-//       .pipe(deploy({
-//         remoteUrl: "git@github.com:vanyusha-pupkin/barbershop.git",
-//         branch: "master"
-//       }))
-// });
-
-// ghpages.publish('build', function(err) {});
-
-
-// gulp.task('deploy', function(done) {
-//   ghPages.publish('build');
-//   done();
-// });
-
-
-gulp.task('deploy', function () {
+function deploy(){
   return gulp.src('build/**/*')
     .pipe(ghPages());
-});
+};
+
+exports.deploy = deploy;
+
+// gulp.task('deploy', function () {
+//   return gulp.src('build/**/*')
+//     .pipe(ghPages());
+// });
