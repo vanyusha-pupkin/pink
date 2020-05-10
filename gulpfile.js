@@ -314,13 +314,13 @@ exports.validateHtml = validateHtml;
 // ghpages.publish('build', function(err) {});
 
 
-// gulp.task('deploy', function(done) {
-//   ghPages.publish('build');
-//   done();
-// });
-
-
-gulp.task('deploy', function () {
-  return gulp.src('build/**/*')
-    .pipe(ghPages());
+gulp.task('deploy', function(done) {
+  ghPages.publish('build');
+  done();
 });
+
+
+// gulp.task('deploy', function () {
+//   return gulp.src('build/**/*')
+//     .pipe(ghPages());
+// });
