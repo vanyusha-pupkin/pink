@@ -286,7 +286,6 @@ exports.build = build;
 exports.watchFiles = series(build, watchFiles);
 
 
-
 function validateHtml(){
   return src('build/**/*.html')
      .pipe(plumber())
@@ -303,8 +302,3 @@ function deploy(){
 };
 
 exports.deploy = deploy;
-
-// gulp.task('deploy', function () {
-//   return gulp.src('build/**/*')
-//     .pipe(ghPages());
-// });
