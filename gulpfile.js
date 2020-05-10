@@ -40,8 +40,8 @@ const
   htmlValidator     = require('gulp-w3c-html-validator');
 
 // const ghpages = require('gh-pages');
-var ghPages = require('gh-pages');
-// var ghPages = require('gulp-gh-pages');
+// var ghPages = require('gh-pages');
+var ghPages = require('gulp-gh-pages');
 
 const isDev     = (process.argv.indexOf('--dev') !== -1);
 const isProd     = !isDev;
@@ -314,13 +314,13 @@ exports.validateHtml = validateHtml;
 // ghpages.publish('build', function(err) {});
 
 
-gulp.task('deploy', function(done) {
-  ghPages.publish('build');
-  done();
-});
-
-
-// gulp.task('deploy', function () {
-//   return gulp.src('build/**/*')
-//     .pipe(ghPages());
+// gulp.task('deploy', function(done) {
+//   ghPages.publish('build');
+//   done();
 // });
+
+
+gulp.task('deploy', function () {
+  return gulp.src('build/**/*')
+    .pipe(ghPages());
+});
