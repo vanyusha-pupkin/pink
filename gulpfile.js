@@ -40,7 +40,7 @@ const
   htmlValidator     = require('gulp-w3c-html-validator');
 
 // const ghpages = require('gh-pages');
-// var ghPages = require('gh-pages');
+var ghPages = require('gh-pages');
 // var ghPages = require('gulp-gh-pages');
 
 const isDev     = (process.argv.indexOf('--dev') !== -1);
@@ -320,7 +320,7 @@ exports.validateHtml = validateHtml;
 // });
 
 
-// gulp.task('deploy', function () {
-//   return gulp.src('build/**/*')
-//     .pipe(ghPages());
-// });
+gulp.task('deploy', function () {
+  return gulp.src('build/**/*')
+    .pipe(ghPages());
+});
