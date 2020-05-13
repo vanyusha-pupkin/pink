@@ -9,7 +9,7 @@
   border: none;
   cursor: pointer;
 
-  transition: background-color 1s, color 1s;
+  transition: background-color 0.5s, color 0.5s;
 
   &--white {
     width: 100%;
@@ -33,6 +33,7 @@
 
   &--green {
     width: 296px;
+    padding: 15px 0;
 
     font-weight: 700;
     text-transform: uppercase;

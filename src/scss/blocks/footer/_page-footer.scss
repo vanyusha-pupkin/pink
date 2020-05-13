@@ -11,9 +11,13 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+
+      padding-right: $padding-tablet;
+      padding-left: $padding-tablet;
     }
 
     @media ($bp-desktop) {
+      padding: 0;
       padding-top: 75px;
       padding-bottom: 75px;
     }

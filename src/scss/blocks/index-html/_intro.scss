@@ -7,7 +7,7 @@
   background-size: cover;
   background-size: 700px auto;
 
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+  @media ($retina-dpi), ($retina-dppx) {
     background-image: url("../img/bg-back-mobile@2x.jpg");
     background-size: 700px auto;
   }
@@ -17,7 +17,7 @@
     background-size: cover;
     // background-size: 1200px auto;
 
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    @media ($retina-dpi), ($retina-dppx) {
       background-image: url("../img/bg-back-tablet@2x.jpg");
       background-size: cover;
       // background-size: 1200px auto;
@@ -29,7 +29,7 @@
     // background-size: cover;
     background-size: 2560px auto;
 
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    @media ($retina-dpi), ($retina-dppx) {
       background-image: url("../img/bg-back-desktop@2x.jpg");
       background-size: 2560px auto;
     }

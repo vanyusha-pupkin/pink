@@ -14,8 +14,12 @@ $padding-desktop: 10px;
 $bp-tablet: "min-width: #{$tablet-width}";
 $bp-desktop: "min-width: #{$desktop-width + 40px}";
 
-$retina-dpi: 144dpi;
-$retina-dppx: 1.5dppx;
+// $retina-dpi: 144dpi;
+// $retina-dppx: 1.5dppx;
+
+$retina-dpi: "min-resolution: 144dpi";
+$retina-dppx: "min-resolution: 1.5dppx";
+
 
 $font-family-base: "Open Sans", "Arial", sans-serif;
 $font-size-base: 18px;
@@ -49,3 +53,6 @@ $font-color-label: $pink;
 $font-color-legend: $pink;
 
 $timing-function-menu: 0.3s;
+$timing-function-form: 0.5s;
+
+
