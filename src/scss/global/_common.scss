@@ -2,13 +2,12 @@
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+  box-sizing: inherit;
 }
 
-// html,
-// body {
-//   min-height: 100%;
-// }
+html {
+  box-sizing: border-box;
+}
 
 img{
   max-width: 100%;

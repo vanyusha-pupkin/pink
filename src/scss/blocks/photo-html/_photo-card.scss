@@ -4,6 +4,7 @@
     display: flex;
     flex-direction: column;
 
+    width: 100%;
     min-height: 455px;
   }
 
@@ -18,7 +19,6 @@
   img {
     display: block;
     min-width: 100%;
-
   }
 }
 
@@ -161,7 +161,7 @@
   cursor: pointer;
 
   &:hover {
-    // background-image: sassvg("icon-heart");
+
   }
 
   @media ($bp-tablet) {

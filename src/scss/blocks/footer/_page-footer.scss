@@ -3,12 +3,18 @@
 }
 
 .page-footer__wrapper {
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    // flex-wrap: wrap;
+
     padding: 40px $padding-tablet;
 
     text-align: center;
 
     @media ($bp-tablet) {
       display: flex;
+      flex-direction: row;
       justify-content: space-between;
       align-items: center;
 
@@ -36,6 +42,7 @@
   display: block;
   width: 147px;
   height: 40px;
+  margin: 0 auto;
 
   transition: all 0.3s;
 
