@@ -29,16 +29,19 @@
 }
 
 .main-header__wrapper {
+  min-height: 240px;
   padding: 0 $padding-mobile;
   padding-top: 95px;
   padding-bottom: 55px;
 
   @media ($bp-tablet) {
+    min-height: 440px;
     padding-top: 180px;
     padding-bottom: 80px;
   }
 
   @media ($bp-desktop) {
+    min-height: 395px;
     padding-top: 175px;
     padding-bottom: 100px;
   }

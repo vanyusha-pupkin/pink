@@ -1,11 +1,9 @@
 .contest {}
 
 .contest__wrapper {
-  padding-top: 45px;
 
   @media ($bp-tablet) {
     padding: 0 $padding-tablet;
-    padding-top: 90px;
     padding-bottom: 40px;
 
   }
@@ -17,37 +15,6 @@
   }
 }
 
-.contest__intro {
-  margin: 0;
-  margin-bottom: 35px;
-  padding: 0 $padding-mobile;
-
-  font-size: 14px;
-  line-height: 30px;
-  text-align: center;
-  color: $blue-dark;
-
-  span {
-    display: none;
-  }
-
-  @media ($bp-tablet) {
-    margin-bottom: 75px;
-    padding: 0 55px;
-
-    font-size: 18px;
-
-    span {
-      display: block;
-    }
-  }
-
-  @media ($bp-desktop) {
-    padding: 0 90px;
-    span {
-      display: inline-block;
-    }
-  }
-}
+.contest__intro {}
 
 .contest__form {}
