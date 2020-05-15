@@ -8,7 +8,7 @@
     <!-- <meta name="author" content="RHM"> -->
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Pink - Главная страница</title>
+    <title>Pink - Конкурс</title>
     <!-- <link rel="icon" type="image/ico" href="img/favicons/favicon.ico"> -->
     <!-- <link rel="icon" type="image/png" sizes="180x180" href="img/favicons/favicon-180.png"> -->
     <!-- <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32.png"> -->
@@ -21,7 +21,7 @@
     <header class="page__header page-header page-header--nojs">
           <div class="container">
             <div class="page-header__wrapper">
-              <a class="page-header__logo">
+              <a href="index.html" class="page-header__logo">
                 <span class="visually-hidden">Логотип Pink</span>
                 <svg class="page-header__logo-image page-header__logo-image--mobile" width="75" height="22">
                   <use xlink:href="#logo-pink-mobile"></use>
@@ -44,11 +44,11 @@
                   </svg>
                 </button>
                 <ul class="main-nav__list">
-                  <li class="main-nav__item main-nav__item--active">
-                    <a>Главная</a>
-                  </li>
                   <li class="main-nav__item">
-                    <a href="photo.html">Фотографии</a>
+                    <a href="index.html">Главная</a>
+                  </li>
+                  <li class="main-nav__item main-nav__item--active">
+                    <a>Фотографии</a>
                   </li>
                   <li class="main-nav__item">
                     <a href="form.html">Конкурс</a>
@@ -62,253 +62,292 @@
           </div> 
     </header>
     <main class="page-main">
-      <h1 class="visually-hidden">Pink - приложение для вашего телефона</h1>
-      <section class="intro">
-        <h2 class="visually-hidden">Скачайте приложение Pink!</h2>
+      <header class="main-header">
         <div class="container">
-          <div class="intro__wrapper">
-            <p class="intro__image">
-              <picture>
-                <source media="(min-width: 980px)" srcset="img/index/iphone-hand-desktop@1x.png, img/index/iphone-hand-desktop@2x.png 2x">
-                <source media="(min-width: 660px)" srcset="img/index/iphone-hand-tablet@1x.png, img/index/iphone-hand-tablet@2x.png 2x">
-                <img src="img/index/iphone-hand-mobile@1x.png" srcset="img/index/iphone-hand-mobile@2x.png 2x" alt="Приложение Pink на телефоне">
-              </picture>
-            </p>
-            <div class="intro__inner">
-              <p class="intro__slogan">Взгляните на жизнь иначе!</p>
-              <a class="intro__button button button--white">Скачать приложение</a>
-              <ul class="intro__list-icons">
-                <li class="intro__item">
-                  <a class="intro__link" href="#" title="AppStore">
-                    <span class="visually-hidden">Скачать приложение с AppStore</span>
-                    <svg class="intro__icon intro__icon--apple" width="47" height="56">
-                      <use xlink:href="#logo-apple"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="intro__item">
-                  <a class="intro__link" href="#" title="Google Play">
-                    <span class="visually-hidden">Скачать приложение с Google Play</span>
-                    <svg class="intro__icon intro__icon--android" width="43" height="47">
-                      <use xlink:href="#logo-android"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="intro__item">
-                  <a class="intro__link" href="#" title="Windows Phone Store">
-                    <span class="visually-hidden">Скачать приложение с Windows Phone Store</span>
-                    <svg class="intro__icon intro__icon--microsoft" width="44" height="41">
-                      <use xlink:href="#logo-microsoft"></use>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
-              <p class="intro__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
-            </div> 
-          </div> 
-        </div> 
-      </section>
-      <section class="advantages">
-        <h2 class="visually-hidden">Главные достоинства нашего приложения</h2>
-        <header class="advantages__header">
-          <div class="container">
-            <p class="advantages__slogan">
-              <span>Устали от серости мегаполиса?</span>
-              <span>Нам есть, что вам <br> предложить!</span>
-            </p>
-          </div> 
-        </header>
-        <div class="advantages__body">
-          <div class="container">
-            <div class="advantages__wrapper">
-              <ul class="advantages__list">
-                <li class="advantages__item advantages__item--cheer-up">
-                  <h3 class="advantages__title">Поднимает настроение</h3>
-                  <p class="advantages__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-                </li>
-                <li class="advantages__item advantages__item--change--world">
-                  <h3 class="advantages__title">Меняет мир вокруг</h3>
-                  <p class="advantages__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-                </li>
-                <li class="advantages__item advantages__item--make-friends">
-                  <h3 class="advantages__title">Заводит новых друзей</h3>
-                  <p class="advantages__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-                </li>
-              </ul>
-            </div> 
-          </div> 
-        </div> 
-      </section>
-      <section class="effect">
-        <div class="container">
-          <div class="effect__wrapper">
-            <h2 class="effect__title">Эффект <br> на&nbsp;24&nbsp;часа!</h2>
-            <p class="effect__text">Британские ученые провели исследования и доказали, что положительный эффект от&nbsp;использования приложения длится целые сутки!</p>
-            <a class="effect__link" href="#" target="_blank">Узнать больше об исследовании</a>
+          <div class="main-header__wrapper">
+            <h1 class="main-header__title">Фотографии <br> пользователей</h1>
           </div>
         </div>
-      </section>
-      <section class="reviews">
+      </header>
+      <section class="photo">
+        <h2 class="visually-hidden">Фотографии наших пользователей</h2>
+          <p class="photo__intro intro-inner intro-inner--photo">
+            Взгляните на фотографии, которые выкладывают пользователи! <br> Видите, как не хватает ваших?
+          </p>
+          <div class="photo__photo-of-day">
+            <article class="photo-card">
+                  <header class="photo-card__image photo-card__image--main">
+                    <a href="#" class="photo-card__link">
+                      <!-- <img  src="img/content/panorama-mobile@1x.jpg" alt=""> -->
+                      <picture>
+                        <source type="image/webp" media="(min-width: 980px)" srcset="img/content/panorama-desktop@1x.webp, img/content/panorama-desktop@2x.webp 2x">
+                        <source type="image/webp" media="(min-width: 660px)" srcset="img/content/panorama-tablet@1x.webp, img/content/panorama-tablet@2x.webp 2x">
+                        <source type="image/webp" srcset="img/content/panorama-mobile@1x.webp, img/content/panorama-mobile@2x.webp 2x">
+                        <source media="(min-width: 980px)" srcset="img/content/panorama-desktop@1x.jpg, img/content/panorama-desktop@2x.jpg 2x">
+                        <source media="(min-width: 660px)" srcset="img/content/panorama-tablet@1x.jpg, img/content/panorama-tablet@2x.jpg 2x">
+                        <img src="img/content/panorama-mobile@1x.jpg" srcset="img/content/panorama-mobile@2x.jpg 2x" alt="Фото автомобиля">
+                      </picture>
+                    </a>
+                  </header>
+                  <div class="container">
+                    <div class="photo-card__description photo-card__description--main">
+                      <p class="photo-card__author-name photo-card__author-name--main">Анна</p>
+                      <p class="photo-card__date photo-card__date--main">(5 минут назад)</p>
+                      <p class="photo-card__text photo-card__text--main">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+                      <footer class="photo-card__like photo-card__like--main">
+                        <p class="photo-card__quantity-of-like photo-card__quantity-of-like--main">
+                          Нравится:
+                          <span>215</span>
+                        </p>
+                        <button class="photo-card__like-it" type="button">
+                          <span class="visually-hidden">Поставить лайк</span>
+                        </button>
+                      </footer>
+                    </div> 
+                  </div> 
+            </article>
+          </div>
         <div class="container">
-          <div class="reviews__wrapper slider">
-            <h2 class="visually-hidden">Отзывы о нашем приложении</h2>
-            <div class="reviews__inner slider__inner">
-              <ul class="reviews__list slider__list">
-                <li class="reviews__item slider__slide">
-                  <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-                  <p class="reviews__author">
-                    <span class="reviews__author-name">Николай Петров</span>
-                    <span class="reviews__author-more-info">25 лет, водитель трамвая</span>
-                  </p>
-                </li>
-                <li class="reviews__item slider__slide">
-                  <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-                  <p class="reviews__author">
-                    <span class="reviews__author-name">Николай Петров</span>
-                    <span class="reviews__author-more-info">25 лет, водитель трамвая</span>
-                  </p>
-                </li>
-                <li class="reviews__item slider__slide">
-                  <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-                  <p class="reviews__author">
-                    <span class="reviews__author-name">Николай Петров</span>
-                    <span class="reviews__author-more-info">25 лет, водитель трамвая</span>
-                  </p>
-                </li>
-              </ul>
-            </div> 
-            <ul class="slider__controls">
-              <li><button class="slider__control slider__control--1 slider__control--active" type="button">1</button></li>
-              <li><button class="slider__control slider__control--1" type="button">2</button></li>
-              <li><button class="slider__control slider__control--1" type="button">3</button></li>
+          <div class="photo__wrapper">
+            <ul class="photo__list">
+              <li class="photo__item">
+                <article class="photo-card">
+                  <header class="photo-card__image">
+                    <a href="#" class="photo-card__link">
+                      <picture>
+                        <source type="image/webp" media="(min-width: 980px)" srcset="img/content/photo-car-desktop@1x.webp, img/content/photo-car-desktop@2x.webp 2x">
+                        <source type="image/webp" media="(min-width: 660px)" srcset="img/content/photo-car-tablet@1x.webp, img/content/photo-car-tablet@2x.webp 2x">
+                        <source type="image/webp" srcset="img/content/photo-car-mobile@1x.webp, img/content/photo-car-mobile@2x.webp 2x">
+                        <source media="(min-width: 980px)" srcset="img/content/photo-car-desktop@1x.jpg, img/content/photo-car-desktop@2x.jpg 2x">
+                        <source media="(min-width: 660px)" srcset="img/content/photo-car-tablet@1x.jpg, img/content/photo-car-tablet@2x.jpg 2x">
+                        <img src="img/content/photo-car-mobile@1x.jpg" srcset="img/content/photo-car-mobile@2x.jpg 2x" alt="Фото автомобиля">
+                      </picture>
+                    </a>
+                  </header>
+                  <div class="photo-card__description">
+                    <p class="photo-card__author-name">Левон</p>
+                    <p class="photo-card__date">(5 часов назад)</p>
+                    <p class="photo-card__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+                    <footer class="photo-card__like">
+                      <p class="photo-card__quantity-of-like">
+                        Нравится:
+                        <span>356</span>
+                      </p>
+                      <button class="photo-card__like-it" type="button">
+                        <span class="visually-hidden">Поставить лайк</span>
+                      </button>
+                    </footer>
+                  </div> 
+                </article>
+              </li>
+              <li class="photo__item">
+                <article class="photo-card">
+                  <header class="photo-card__image">
+                    <a href="#" class="photo-card__link">
+                      <picture>
+                        <source type="image/webp" media="(min-width: 980px)" srcset="img/content/photo-drumset-desktop@1x.webp, img/content/photo-drumset-desktop@2x.webp 2x">
+                        <source type="image/webp" media="(min-width: 660px)" srcset="img/content/photo-drumset-tablet@1x.webp, img/content/photo-drumset-tablet@2x.webp 2x">
+                        <source type="image/webp" srcset="img/content/photo-drumset-mobile@1x.webp, img/content/photo-drumset-mobile@2x.webp 2x">
+                        <source media="(min-width: 980px)" srcset="img/content/photo-drumset-desktop@1x.jpg, img/content/photo-drumset-desktop@2x.jpg 2x">
+                        <source media="(min-width: 660px)" srcset="img/content/photo-drumset-tablet@1x.jpg, img/content/photo-drumset-tablet@2x.jpg 2x">
+                        <img src="img/content/photo-drumset-mobile@1x.jpg" srcset="img/content/photo-drumset-mobile@2x.jpg 2x" alt="Фото автомобиля">
+                      </picture>
+                    </a>
+                  </header>
+                  <div class="photo-card__description">
+                    <p class="photo-card__author-name">Антон</p>
+                    <p class="photo-card__date"> (12 часов назад)</p>
+                    <p class="photo-card__text">Соседи будут рады!</p>
+                    <footer class="photo-card__like">
+                      <p class="photo-card__quantity-of-like">
+                        Нравится:
+                        <span>666</span>
+                      </p>
+                      <button class="photo-card__like-it" type="button">
+                        <span class="visually-hidden">Поставить лайк</span>
+                      </button>
+                    </footer>
+                  </div> 
+                </article>
+              </li>
+              <li class="photo__item">
+                <article class="photo-card">
+                  <header class="photo-card__image">
+                    <a href="#" class="photo-card__link">
+                      <picture>
+                        <source type="image/webp" media="(min-width: 980px)" srcset="img/content/photo-window-desktop@1x.webp, img/content/photo-window-desktop@2x.webp 2x">
+                        <source type="image/webp" media="(min-width: 660px)" srcset="img/content/photo-window-tablet@1x.webp, img/content/photo-window-tablet@2x.webp 2x">
+                        <source type="image/webp" srcset="img/content/photo-window-mobile@1x.webp, img/content/photo-window-mobile@2x.webp 2x">
+                        <source media="(min-width: 980px)" srcset="img/content/photo-window-desktop@1x.jpg, img/content/photo-window-desktop@2x.jpg 2x">
+                        <source media="(min-width: 660px)" srcset="img/content/photo-window-tablet@1x.jpg, img/content/photo-window-tablet@2x.jpg 2x">
+                        <img src="img/content/photo-window-mobile@1x.jpg" srcset="img/content/photo-window-mobile@2x.jpg 2x" alt="Фото автомобиля">
+                      </picture>
+                    </a>
+                  </header>
+                  <div class="photo-card__description">
+                    <p class="photo-card__author-name">Борис</p>
+                    <p class="photo-card__date">(20 часов назад)</p>
+                    <p class="photo-card__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
+                    <footer class="photo-card__like">
+                      <p class="photo-card__quantity-of-like">
+                        Нравится:
+                        <span>215</span>
+                      </p>
+                      <button class="photo-card__like-it" type="button">
+                        <span class="visually-hidden">Поставить лайк</span>
+                      </button>
+                    </footer>
+                  </div> 
+                </article>
+              </li>
+              <li class="photo__item">
+                <article class="photo-card">
+                  <header class="photo-card__image">
+                    <a href="#" class="photo-card__link">
+                      <picture>
+                        <source type="image/webp" media="(min-width: 980px)" srcset="img/content/photo-fair-desktop@1x.webp, img/content/photo-fair-desktop@2x.webp 2x">
+                        <source type="image/webp" media="(min-width: 660px)" srcset="img/content/photo-fair-tablet@1x.webp, img/content/photo-fair-tablet@2x.webp 2x">
+                        <source type="image/webp" srcset="img/content/photo-fair-mobile@1x.webp, img/content/photo-fair-mobile@2x.webp 2x">
+                        <source media="(min-width: 980px)" srcset="img/content/photo-fair-desktop@1x.jpg, img/content/photo-fair-desktop@2x.jpg 2x">
+                        <source media="(min-width: 660px)" srcset="img/content/photo-fair-tablet@1x.jpg, img/content/photo-fair-tablet@2x.jpg 2x">
+                        <img src="img/content/photo-fair-mobile@1x.jpg" srcset="img/content/photo-fair-mobile@2x.jpg 2x" alt="Фото автомобиля">
+                      </picture>
+                    </a>
+                  </header>
+                  <div class="photo-card__description">
+                    <p class="photo-card__author-name">Сергей</p>
+                    <p class="photo-card__date">(25 часов назад)</p>
+                    <p class="photo-card__text">Самая кубанская в мире!</p>
+                    <footer class="photo-card__like">
+                      <p class="photo-card__quantity-of-like">
+                        Нравится:
+                        <span>4</span>
+                      </p>
+                      <button class="photo-card__like-it" type="button">
+                        <span class="visually-hidden">Поставить лайк</span>
+                      </button>
+                    </footer>
+                  </div> 
+                </article>
+              </li>
+              <li class="photo__item">
+                <article class="photo-card">
+                  <header class="photo-card__image">
+                    <a href="#" class="photo-card__link">
+                      <picture>
+                        <source type="image/webp" media="(min-width: 980px)" srcset="img/content/photo-pov-desktop@1x.webp, img/content/photo-pov-desktop@2x.webp 2x">
+                        <source type="image/webp" media="(min-width: 660px)" srcset="img/content/photo-pov-tablet@1x.webp, img/content/photo-pov-tablet@2x.webp 2x">
+                        <source type="image/webp" srcset="img/content/photo-pov-mobile@1x.webp, img/content/photo-pov-mobile@2x.webp 2x">
+                        <source media="(min-width: 980px)" srcset="img/content/photo-pov-desktop@1x.jpg, img/content/photo-pov-desktop@2x.jpg 2x">
+                        <source media="(min-width: 660px)" srcset="img/content/photo-pov-tablet@1x.jpg, img/content/photo-pov-tablet@2x.jpg 2x">
+                        <img src="img/content/photo-pov-mobile@1x.jpg" srcset="img/content/photo-pov-mobile@2x.jpg 2x" alt="Фото автомобиля">
+                      </picture>
+                    </a>
+                  </header>
+                  <div class="photo-card__description">
+                    <p class="photo-card__author-name">Максим</p>
+                    <p class="photo-card__date">(40 часов назад)</p>
+                    <p class="photo-card__text">Где снег-то?</p>
+                    <footer class="photo-card__like">
+                      <p class="photo-card__quantity-of-like">
+                        Нравится:
+                        <span>150</span>
+                      </p>
+                      <button class="photo-card__like-it" type="button">
+                        <span class="visually-hidden">Поставить лайк</span>
+                      </button>
+                    </footer>
+                  </div> 
+                </article>
+              </li>
+              <li class="photo__item">
+                <article class="photo-card">
+                  <header class="photo-card__image">
+                    <a href="#" class="photo-card__link">
+                      <picture>
+                        <source type="image/webp" media="(min-width: 980px)" srcset="img/content/photo-wing-desktop@1x.webp, img/content/photo-wing-desktop@2x.webp 2x">
+                        <source type="image/webp" media="(min-width: 660px)" srcset="img/content/photo-wing-tablet@1x.webp, img/content/photo-wing-tablet@2x.webp 2x">
+                        <source type="image/webp" srcset="img/content/photo-wing-mobile@1x.webp, img/content/photo-wing-mobile@2x.webp 2x">
+                        <source media="(min-width: 980px)" srcset="img/content/photo-wing-desktop@1x.jpg, img/content/photo-wing-desktop@2x.jpg 2x">
+                        <source media="(min-width: 660px)" srcset="img/content/photo-wing-tablet@1x.jpg, img/content/photo-wing-tablet@2x.jpg 2x">
+                        <img src="img/content/photo-wing-mobile@1x.jpg" srcset="img/content/photo-wing-mobile@2x.jpg 2x" alt="Фото автомобиля">
+                      </picture>
+                    </a>
+                  </header>
+                  <div class="photo-card__description">
+                    <p class="photo-card__author-name">Надежда</p>
+                    <p class="photo-card__date">(45 часов назад)</p>
+                    <p class="photo-card__text">Всем GM и взаимные лайки!</p>
+                    <footer class="photo-card__like">
+                      <p class="photo-card__quantity-of-like">
+                        Нравится:
+                        <span>356</span>
+                      </p>
+                      <button class="photo-card__like-it" type="button">
+                        <span class="visually-hidden">Поставить лайк</span>
+                      </button>
+                    </footer>
+                  </div> 
+                </article>
+              </li>
             </ul>
-            <button class="slider__prev" type="button">Предыдущий</button>
-            <button class="slider__next" type="button">Следующий</button>
           </div> 
         </div> 
       </section>
-      <section class="price">
-        <h2 class="visually-hidden">Таблица тарифов на наше приложение</h2>
+      <section class="post">
+        <h2 class="visually-hidden">Запостите ваше фото!</h2>
         <div class="container">
-          <div class="price__wrapper slider">
-            <div class="price__inner slider__inner">
-              <table class="price__table table slider__list slider__list--table">
-                <thead class="table__header">
-                  <tr class="table__row table__row--header">
-                    <th class="table__cell table__cell--hidden"></th>
-                    <th class="table__cell table__cell--header">
-                      <span class="price__tariff">База</span>
-                      <span class="price__price">1,99 USD</span>
-                    </th>
-                    <th class="table__cell table__cell--header price__hit">
-                      <span class="price__tariff">Стандарт</span>
-                      <span class="price__price">3,99 USD</span>
-                    </th>
-                    <th class="table__cell table__cell--header">
-                      <span class="price__tariff">Анлим</span>
-                      <span class="price__price">9,99 USD</span>
-                    </th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr class="table__row table__row--body">
-                    <td class="table__cell table__cell--first">Розовый фильтр</td>
-                    <td class="table__cell table__cell--body">
-                      <span class="price__optional">Розовый фильтр</span>
-                      <svg class="price__icon-yes" width="31" height="21">
-                        <use xlink:href="#icon-yes"></use>
-                      </svg>
-                    </td>
-                    <td class="table__cell table__cell--body">
-                      <span class="price__optional">Розовый фильтр</span>
-                      <svg class="price__icon-yes" width="31" height="21">
-                        <use xlink:href="#icon-yes"></use>
-                      </svg>
-                    </td>
-                    <td class="table__cell table__cell--body">
-                      <span class="price__optional">Розовый фильтр</span>
-                      <svg class="price__icon-yes" width="31" height="21">
-                        <use xlink:href="#icon-yes"></use>
-                      </svg>
-                    </td>
-                  </tr>
-                  <tr class="table__row table__row--body">
-                    <td class="table__cell table__cell--first">Смайлики</td>
-                    <td class="table__cell table__cell--body">
-                      <span class="price__optional">Смайлики</span>
-                      <svg class="price__icon-no" width="27" height="26">
-                        <use xlink:href="#icon-no"></use>
-                      </svg>
-                    </td>
-                    <td class="table__cell table__cell--body">
-                      <span class="price__optional">Смайлики</span>
-                      <svg class="price__icon-yes" width="31" height="21">
-                        <use xlink:href="#icon-yes"></use>
-                      </svg>
-                    </td>
-                    <td class="table__cell table__cell--body">
-                      <span class="price__optional">Смайлики</span>
-                      <svg class="price__icon-yes" width="31" height="21">
-                        <use xlink:href="#icon-yes"></use>
-                      </svg>
-                    </td>
-                  </tr>
-                  <tr class="table__row table__row--body">
-                    <td class="table__cell table__cell--first">Комментарии</td>
-                    <td class="table__cell table__cell--body">
-                      <span class="price__optional">Комментарии</span>
-                      <svg class="price__icon-no" width="27" height="26">
-                        <use xlink:href="#icon-no"></use>
-                      </svg>
-                    </td>
-                    <td class="table__cell table__cell--body">
-                      <span class="price__optional">Комментарии</span>
-                      <svg class="price__icon-no" width="27" height="26">
-                        <use xlink:href="#icon-no"></use>
-                      </svg>
-                    </td>
-                    <td class="table__cell table__cell--body">
-                      <span class="price__optional">Комментарии</span>
-                      <svg class="price__icon-yes" width="31" height="21">
-                        <use xlink:href="#icon-yes"></use>
-                      </svg>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div> 
-            <ul class="price__controls slider__controls slider__controls--table">
-              <li><button class="slider__control slider__control--1" type="button">1</button></li>
-              <li><button class="slider__control slider__control--2 slider__control--active" type="button">2</button></li>
-              <li><button class="slider__control slider__control--3" type="button">3</button></li>
-            </ul>
+            <p class="post__promo">Затмите их всех! <br> Выкладывайте все, что накопилось в телефоне!</p>
+            <div class="post__wrapper">
+              <div class="post__image">
+                <!-- <img src="" alt=""> -->
+                <picture>
+                        <source type="image/webp" media="(min-width: 980px)" srcset="img/content/photo-road-desktop@1x.webp, img/content/photo-road-desktop@2x.webp 2x">
+                        <source type="image/webp" media="(min-width: 660px)" srcset="img/content/photo-road-tablet@1x.webp, img/content/photo-road-tablet@2x.webp 2x">
+                        <source type="image/webp" srcset="img/content/photo-road-mobile@1x.webp, img/content/photo-road-mobile@2x.webp 2x">
+                        <source media="(min-width: 980px)" srcset="img/content/photo-road-desktop@1x.jpg, img/content/photo-road-desktop@2x.jpg 2x">
+                        <source media="(min-width: 660px)" srcset="img/content/photo-road-tablet@1x.jpg, img/content/photo-road-tablet@2x.jpg 2x">
+                        <img src="img/content/photo-road-mobile@1x.jpg" srcset="img/content/photo-road-mobile@2x.jpg 2x" alt="Фото автомобиля">
+                      </picture>
+              </div>
+              <div class="post__setting">
+                <ul class="post__list">
+                  <li class="post__item">
+                    <button class="post__icon post__icon--crop">
+                      <svg><use xlink:href="#icon-editor-crop"></use></svg>
+                      <span class="visually-hidden">Кадрировать</span>
+                    </button>
+                    <div class="post__scale post__scale--crop">
+                      <span class="post__toggle post__toggle--crop"></span>
+                    </div>
+                  </li>
+                  <li class="post__item">
+                    <button class="post__icon post__icon--fill">
+                      <svg><use xlink:href="#icon-editor-fill"></use></svg>
+                      <span class="visually-hidden">Залить цветом</span>
+                    </button>
+                    <div class="post__scale post__scale--fill">
+                      <span class="post__toggle post__toggle--fill"></span>
+                    </div>
+                  </li>
+                  <li class="post__item">
+                    <button class="post__icon post__icon--contrast">
+                      <svg><use xlink:href="#icon-editor-contrast"></use></svg>
+                      <span class="visually-hidden">Контрастность</span>
+                    </button>
+                    <div class="post__scale post__scale--contrast">
+                      <span class="post__toggle post__toggle--contrast"></span>
+                    </div>
+                  </li>
+                </ul>
+                <div class="post__buttons">
+                  <button class="post__submit button button--pink">Запостить</button>
+                  <button class="post__cansel button button--gray">Отмена</button>
+                </div>
+              </div> 
+            <!-- </div> -->
           </div> 
         </div> 
-      </section>
-      <section class="contacts">
-        <h2 class="visually-hidden">Наши контакты</h2>
-          <div class="container">
-            <div class="contacts__wrapper">
-              <p class="contacts__slogan">Остались вопросы? <br> Свяжитесь с нами!</p>
-              <ul class="contacts__list">
-                <li class="contacts__item">
-                  <h3 class="contacts__title">Звоните:</h3>
-                  <a class="contacts__link" href="tel:+78125556666">+7 (812) 555-66-66</a>
-                </li>
-                <li class="contacts__item">
-                  <h3 class="contacts__title">Пишите:</h3>
-                  <a class="contacts__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-                </li>
-                <li class="contacts__item">
-                  <h3 class="contacts__title">Приезжайте в гости:</h3>
-                  <a class="contacts__link" href="https://goo.gl/maps/oDSAwarPxVUcZXWo7" target="_blank">ул. Большая <br> Конюшенная, 19/8</a>
-                </li>
-              </ul>
-            </div> 
-          </div> 
-      </section>
-      <section class="map">
-        <h2 class="visually-hidden">Мы на карте</h2>
       </section>
     </main>
     <footer class="page-footer">      <div class="container">        <div class="page-footer__wrapper">          <a href="#" class="page-footer__logo">            <svg class="page-footer__logo-image page-footer__logo-image--tablet">              <use xlink:href="#logo-pink-footer-tablet"></use>            </svg>            <svg class="page-footer__logo-image page-footer__logo-image--desktop">              <use xlink:href="#logo-pink-footer-desktop"></use>            </svg>          </a>          <div class="page-footer__social social">            <ul class="social__list">              <li class="social__item">                <a class="social__link social__link--twitter" href="#" target="_blank">Мы в Твиттере</a>              </li>              <li class="social__item">                <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy" target="_blank">Мы в Фейсбуке</a>              </li>              <li class="social__item">                <a class="social__link social__link--youtube" href="#" target="_blank">Мы на YouTube</a>              </li>            </ul>          </div>           <div class="page-footer__developer developer">            <p class="developer__title">Разработано</p>            <a class="developer__link" href="#">              <span class="visually-hidden">HTML Academy</span>              <svg class="developer__icon" width="27" height="34">                <use xlink:href="#logo-htmlacademy"></use>              </svg>            </a>          </div>        </div>       </div>     </footer>    <script src="js/main.min.js"></script>
