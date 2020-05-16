@@ -1,0 +1,10 @@
+.modal-failure {}
+
+.modal-failure__wrapper-button {
+
+  @media ($bp-desktop) {
+    padding-top: 50px;
+
+    background-color: $bg-color-gray;
+  }
+}

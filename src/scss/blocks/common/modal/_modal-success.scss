@@ -1,0 +1,16 @@
+.modal-success {
+   padding-bottom: 0;
+}
+
+.modal-success__wrapper-button {
+  padding-top: 50px;
+
+  background-color: $bg-color-gray;
+}
+
+.modal-success__button {
+
+  @media ($bp-desktop) {
+    width: 455px;
+  }
+}

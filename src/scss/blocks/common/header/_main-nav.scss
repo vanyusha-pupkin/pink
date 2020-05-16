@@ -1,0 +1,180 @@
+
+.main-nav {}
+
+.main-nav__toggle {
+  position: absolute;
+  top: 21px;
+  right: 24px;
+
+  width: 50px;
+  height: 24px;
+
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+
+  @media ($bp-tablet) {
+    top: 45px;
+  }
+
+  @media ($bp-desktop) {
+    display: none;
+  }
+}
+
+.main-nav__toggle-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  fill: $color-white;
+
+  &:hover {
+    fill: $color-pink;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media ($bp-desktop) {
+    display: none;
+  }
+}
+
+.main-nav__list {
+  @include list-reset ();
+
+  @media ($bp-desktop) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.main-nav__item {
+  @media ($bp-desktop) {
+    position: relative;
+
+    margin-left: 80px;
+
+    &:first-child {
+      margin: 0;
+    }
+
+    &--active {
+
+      &::after {
+        content: "";
+
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+
+        width: 100%;
+        height: 2px;
+
+        background-color: $color-white;
+      }
+
+
+    }
+  }
+}
+
+.main-nav__item a {
+  display: block;
+
+  padding: 15px 0;
+
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  color: $color-white;
+
+  border-top: 1px solid #485461;
+  border-bottom: 1px solid #000000;
+  background-color: $bg-color-menu-items;
+
+  transition: $timing-function-menu;
+
+  @media ($bp-desktop) {
+    padding: 0;
+
+    font-weight: 400;
+    text-transform: none;
+
+    border: none;
+    background-color: transparent;
+
+    &[href] {
+
+      &:hover {
+        color: $color-pink;
+      }
+
+      &:active {
+        color: $color-white;
+        opacity: 0.3;
+      }
+    }
+  }
+}
+
+
+@media (max-width: $width-only-mobile-tablet) {
+
+  .main-nav--closed {
+
+    .main-nav__list {
+      display: none;
+    }
+
+    .main-nav__toggle-icon {
+      &--cross {
+        display: none;
+      }
+      &--burger {
+        display: block;
+        width: 50px;
+        height: 24px;
+
+      }
+    }
+  }
+
+  .main-nav--opened {
+
+    .main-nav__toggle {
+      right: 24px;
+    }
+
+    .main-nav__toggle-icon {
+      &--cross {
+        display: block;
+        width: 24px;
+        height: 23px;
+
+      }
+      &--burger {
+        display: none;
+      }
+    }
+
+  }
+
+  .main-nav--nojs {
+    .main-nav__list {
+      display: block;
+    }
+  }
+
+  .main-nav--nojs .main-nav__toggle {
+    display: none;
+  }
+
+}

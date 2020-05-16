@@ -1,0 +1,166 @@
+.photo-card {
+
+  @media ($bp-tablet) {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    min-height: 455px;
+  }
+
+  @media ($bp-desktop) {
+    min-height: 550px;
+  }
+}
+
+.photo-card__image {
+  background-color: $bg-color-gray;
+
+  img {
+    display: block;
+    min-width: 100%;
+  }
+}
+
+.photo-card__link {}
+
+.photo-card__description {
+  padding: 0 18px;
+  padding-top: 13px;
+  padding-bottom: 20px;
+
+  color: $color-blue-dark;
+
+  background-color: $bg-color-gray;
+
+  @media ($bp-tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+
+    padding: 25px 28px;
+  }
+
+  &--main {
+    margin: 0 $padding-mobile;
+
+    @media ($bp-desktop) {
+      margin: 0;
+    }
+  }
+}
+
+.photo-card__author-name {
+  display: inline-block;
+  margin: 0;
+
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+
+  @media ($bp-tablet) {
+    margin-right: 5px;
+  }
+
+  &--main {
+    @media ($bp-tablet) {
+      order: 1;
+    }
+  }
+}
+
+.photo-card__date {
+  display: inline-block;
+  margin: 0;
+
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 24px;
+  text-transform: uppercase;
+
+    &--main {
+    @media ($bp-tablet) {
+      order: 2;
+    }
+  }
+}
+
+.photo-card__text {
+  margin: 0;
+  margin-bottom: 10px;
+
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+
+  @media ($bp-tablet) {
+    flex: 0 0 100%;
+  }
+
+  &--main {
+    @media ($bp-tablet) {
+      order: 4;
+
+      margin-bottom: 0;
+    }
+  }
+}
+
+.photo-card__like {
+  display: flex;
+  align-items: center;
+
+  @media ($bp-tablet) {
+    flex: 0 0 100%;
+    justify-content: space-between;
+
+    margin-top: auto;
+  }
+
+  &--main {
+    @media ($bp-tablet) {
+      flex: 0 0 auto;
+      order: 3;
+
+      margin-left: auto;
+    }
+  }
+}
+
+.photo-card__quantity-of-like {
+  order: 1;
+  margin: 0;
+
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: $color-pink;
+
+  @media ($bp-tablet) {
+    order: 0;
+  }
+
+  &--main {
+    margin-right: 17px;
+  }
+}
+
+.photo-card__like-it {
+  width: 13px;
+  height: 13px;
+  margin-right: 18px;
+
+  background-color: transparent;
+  background-image: sassvg("icon-heart", $color-pink);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  border: none;
+  cursor: pointer;
+
+  &:hover {}
+
+  @media ($bp-tablet) {
+    margin-right: 0;
+  }
+}

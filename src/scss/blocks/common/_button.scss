@@ -1,0 +1,94 @@
+.button {
+  display: inline-block;
+  padding: 10px 10px;
+
+  font: inherit;
+  font-size: 18px;
+  text-align: center;
+
+  border: none;
+  cursor: pointer;
+
+  transition: background-color 0.5s, color 0.5s;
+
+  &--white {
+    width: 100%;
+
+    font-weight: 700;
+
+    border: 3px solid $color-white;
+    border-radius: 28px;
+
+    &:hover {
+      color: $color-pink;
+      background-color: $color-white;
+    }
+
+    &:active {
+      color: rgba(210, 40, 86, 0.3);
+      background-color: $color-white;
+    }
+
+  }
+
+  &--green {
+    width: 296px;
+    padding: 15px 0;
+
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $color-white;
+
+    border-radius: 3px;
+    background-color: $color-green-bark;
+
+    &:hover {
+      color: $color-white;
+      background-color: #1c9b5e;
+    }
+
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+      background-color: #1c9b5e;
+    }
+  }
+
+  &--pink {
+    width: 280px;
+
+    color: $color-pink;
+
+    border: 3px solid $color-pink;
+    border-radius: 28px;
+
+    &:hover {
+      color: $color-white;
+      background-color: $color-pink;
+    }
+
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+      background-color: $color-pink;
+    }
+  }
+
+  &--gray{
+    width: 280px;
+
+    color: rgba(40, 54, 69, 0.1);
+
+    border: 3px solid rgba(40, 54, 69, 0.1);
+    border-radius: 28px;
+
+    &:hover {
+    color: rgba(40, 54, 69, 0.3);
+    border: 3px solid rgba(40, 54, 69, 0.3);
+    }
+
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+      border: 3px solid rgba(40, 54, 69, 0.3);
+      background-color: rgba(40, 54, 69, 0.3);
+    }
+  }
+}

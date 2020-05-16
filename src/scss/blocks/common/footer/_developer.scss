@@ -1,0 +1,36 @@
+.developer {
+  display: flex;
+  justify-content: center;
+}
+
+.developer__title {
+  margin: 0;
+  margin-right: 15px;
+
+  font-size: 14px;
+  color: $color-blue-dark;
+
+  @media ($bp-desktop) {
+    font-size: 18px;
+  }
+}
+
+.developer__link {
+
+}
+
+.developer__icon {
+  display: block;
+
+  fill: $color-pink;
+
+  transition: all 0.3s;
+
+  &:hover {
+    fill: $color-blue-dark;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

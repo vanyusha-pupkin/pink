@@ -1,0 +1,55 @@
+.intro-inner {
+  margin: 0;
+  padding: 0 $padding-mobile;
+  padding-top: 45px;
+  padding-bottom: 45px;
+
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+  color: $color-blue-dark;
+
+  @media ($bp-tablet) {
+    padding: 0 55px;
+    padding-top: 90px;
+    padding-bottom: 75px;
+
+    font-size: 18px;
+  }
+
+  @media ($bp-desktop) {
+    padding-right: 90px;
+    padding-left: 90px;
+    padding-top: 92px;
+    padding-bottom: 90px;
+  }
+
+  &--form {
+    span {
+      display: none;
+
+      @media ($bp-tablet) {
+          display: block;
+      }
+
+      @media ($bp-desktop) {
+          display: inline-block;
+      }
+    }
+  }
+
+  &--photo {
+    br {
+
+      @media ($bp-tablet) {
+          display: none;
+      }
+
+      @media ($bp-desktop) {
+          display: block;
+      }
+    }
+  }
+}
+
+

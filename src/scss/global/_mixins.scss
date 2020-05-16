@@ -19,9 +19,9 @@
     border-left: 100vw solid transparent;
   }
 
-  @media (max-width: $mobile-width) {
+  @media (max-width: $width-mobile) {
     &::before {
-      border-left: $mobile-width solid transparent;
+      border-left: $width-mobile solid transparent;
     }
   }
 
@@ -38,7 +38,6 @@
       border-bottom: $height-desktop solid $bg-color-desktop;
     }
   }
-
 }
 
 @mixin two-triangles ($bg-color-modile, $bg-color-tablet, $bg-color-desktop, $height-modile, $height-tablet, $height-desktop) {
@@ -67,16 +66,13 @@
     border-right: 50vw solid transparent;
   }
 
-
-  @media (max-width: $mobile-width) {
+  @media (max-width: $width-mobile) {
     &::before {
-      // left: 0;
-      border-left: $mobile-width / 2 solid transparent;
+      border-left: $width-mobile / 2 solid transparent;
     }
 
     &::after {
-      // right: 0;
-      border-right: $mobile-width / 2 solid transparent;
+      border-right: $width-mobile / 2 solid transparent;
     }
   }
 
@@ -95,6 +91,27 @@
       border-top: $height-desktop solid $bg-color-desktop;
     }
   }
-
 }
 
+@mixin list-reset () {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+
+@mixin font-face ($family, $src, $local-name-1, $local-name-2, $weight: normal, $style: normal) {
+  @font-face {
+    font-family: $family;
+    font-style: $style;
+    font-weight: $weight;
+    font-display: swap;
+    src:  local($local-name-1),
+          local($local-name-2),
+          url('#{$folder-fonts + $src}.woff2') format('woff2'),
+          url('#{$folder-fonts + $src}.woff') format('woff');
+          // url("../fonts/OpenSans-Light.woff2") format("woff2"),
+          // url("../fonts/OpenSans-Light.woff") format("woff");
+  }
+}
