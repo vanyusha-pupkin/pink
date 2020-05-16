@@ -25,10 +25,10 @@
   'link-photo': 'href="photo.html"',
   'link-form': 'href="form.html"',
 
-  'link-logo-index': '',
-  'link-logo': 'href="index.html"'
+  'link-logo-index': ''
 })
 
+  <!-- 'link-logo': 'href="index.html"' -->
 
     <!------------------- content ------------------>
 
@@ -53,7 +53,7 @@
               <a class="intro__button button button--white">Скачать приложение</a>
               <ul class="intro__list-icons">
                 <li class="intro__item">
-                  <a class="intro__link" href="#" title="AppStore">
+                  <a class="intro__link" href="https://www.apple.com/ru/ios/app-store/" title="AppStore">
                     <span class="visually-hidden">Скачать приложение с AppStore</span>
                     <svg class="intro__icon intro__icon--apple" width="47" height="56">
                       <use xlink:href="#logo-apple"></use>
@@ -61,7 +61,7 @@
                   </a>
                 </li>
                 <li class="intro__item">
-                  <a class="intro__link" href="#" title="Google Play">
+                  <a class="intro__link" href="https://play.google.com/store?hl=ru" title="Google Play">
                     <span class="visually-hidden">Скачать приложение с Google Play</span>
                     <svg class="intro__icon intro__icon--android" width="43" height="47">
                       <use xlink:href="#logo-android"></use>
@@ -69,7 +69,7 @@
                   </a>
                 </li>
                 <li class="intro__item">
-                  <a class="intro__link" href="#" title="Windows Phone Store">
+                  <a class="intro__link" href="https://www.microsoft.com/store/apps/windows-phone" title="Windows Phone Store">
                     <span class="visually-hidden">Скачать приложение с Windows Phone Store</span>
                     <svg class="intro__icon intro__icon--microsoft" width="44" height="41">
                       <use xlink:href="#logo-microsoft"></use>
@@ -321,7 +321,7 @@
 
 
     <!------------------- footer ------------------->
-@@include('html/_footer.html')
+@@include('html/_footer.html', {'link-logo-index': ''})
 
 
     <!---------------- modal-windows --------------->

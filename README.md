@@ -9,7 +9,9 @@
 
 `npm run build`     - финальная сборка проекта
 
-`npm run dev`       - режим: работа над проектом
+`npm run start`     - режим: работа над проектом
+
+`npm run deploy`    - публикация содержимого папки build на GitHub Page
 
 `npm run testhtml`  - проверка html кода валидатором W3C
 

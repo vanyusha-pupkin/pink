@@ -39,14 +39,17 @@
 
   transition: all 0.3s;
 
-  &:hover {
-    fill: $color-pink;
+  .page-footer__logo[href] & {
+    &:hover {
+      fill: $color-pink;
+    }
+
+    &:active{
+      fill: $color-black;
+      opacity: 0.3;
+    }
   }
 
-  &:active{
-    fill: $color-black;
-    opacity: 0.3;
-  }
 
   &--tablet {
 
