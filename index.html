@@ -2,12 +2,12 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8">
-    <meta name="format-detection" content="telephone=no">
+    <!-- <meta name="format-detection" content="telephone=no"> -->
     <meta name="keywords" content="оригинальные фотографии, приложение для смартфона, Pink, поднимает настроение, смайлики">
     <meta name="descriptioniption" content="Приложение Pink &ndash; меняет мир вокруг!">
     <!-- <meta name="author" content="RHM"> -->
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- <meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
     <title>Pink - Главная страница</title>
     <!-- <link rel="icon" type="image/ico" href="img/favicons/favicon.ico"> -->
     <!-- <link rel="icon" type="image/png" sizes="180x180" href="img/favicons/favicon-180.png"> -->
@@ -67,19 +67,12 @@
         <h2 class="visually-hidden">Скачайте приложение Pink!</h2>
         <div class="container">
           <div class="intro__wrapper">
-            <p class="intro__image">
-              <picture>
-                <source media="(min-width: 980px)" srcset="img/index/iphone-hand-desktop@1x.png, img/index/iphone-hand-desktop@2x.png 2x">
-                <source media="(min-width: 660px)" srcset="img/index/iphone-hand-tablet@1x.png, img/index/iphone-hand-tablet@2x.png 2x">
-                <img src="img/index/iphone-hand-mobile@1x.png" srcset="img/index/iphone-hand-mobile@2x.png 2x" alt="Приложение Pink на телефоне">
-              </picture>
-            </p>
             <div class="intro__inner">
               <p class="intro__slogan">Взгляните на жизнь иначе!</p>
               <a class="intro__button button button--white">Скачать приложение</a>
               <ul class="intro__list-icons">
                 <li class="intro__item">
-                  <a class="intro__link" href="#" title="AppStore">
+                  <a class="intro__link" href="https://www.apple.com/ru/ios/app-store/" title="AppStore">
                     <span class="visually-hidden">Скачать приложение с AppStore</span>
                     <svg class="intro__icon intro__icon--apple" width="47" height="56">
                       <use xlink:href="#logo-apple"></use>
@@ -87,7 +80,7 @@
                   </a>
                 </li>
                 <li class="intro__item">
-                  <a class="intro__link" href="#" title="Google Play">
+                  <a class="intro__link" href="https://play.google.com/store?hl=ru" title="Google Play">
                     <span class="visually-hidden">Скачать приложение с Google Play</span>
                     <svg class="intro__icon intro__icon--android" width="43" height="47">
                       <use xlink:href="#logo-android"></use>
@@ -95,7 +88,7 @@
                   </a>
                 </li>
                 <li class="intro__item">
-                  <a class="intro__link" href="#" title="Windows Phone Store">
+                  <a class="intro__link" href="https://www.microsoft.com/store/apps/windows-phone" title="Windows Phone Store">
                     <span class="visually-hidden">Скачать приложение с Windows Phone Store</span>
                     <svg class="intro__icon intro__icon--microsoft" width="44" height="41">
                       <use xlink:href="#logo-microsoft"></use>
@@ -311,6 +304,42 @@
         <h2 class="visually-hidden">Мы на карте</h2>
       </section>
     </main>
-    <footer class="page-footer">      <div class="container">        <div class="page-footer__wrapper">          <a href="#" class="page-footer__logo">            <svg class="page-footer__logo-image page-footer__logo-image--tablet">              <use xlink:href="#logo-pink-footer-tablet"></use>            </svg>            <svg class="page-footer__logo-image page-footer__logo-image--desktop">              <use xlink:href="#logo-pink-footer-desktop"></use>            </svg>          </a>          <div class="page-footer__social social">            <ul class="social__list">              <li class="social__item">                <a class="social__link social__link--twitter" href="#" target="_blank">Мы в Твиттере</a>              </li>              <li class="social__item">                <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy" target="_blank">Мы в Фейсбуке</a>              </li>              <li class="social__item">                <a class="social__link social__link--youtube" href="#" target="_blank">Мы на YouTube</a>              </li>            </ul>          </div>           <div class="page-footer__developer developer">            <p class="developer__title">Разработано</p>            <a class="developer__link" href="#">              <span class="visually-hidden">HTML Academy</span>              <svg class="developer__icon" width="27" height="34">                <use xlink:href="#logo-htmlacademy"></use>              </svg>            </a>          </div>        </div>       </div>     </footer>    <script src="js/main.min.js"></script>
+    <footer class="page-footer">
+      <div class="container">
+        <div class="page-footer__wrapper">
+          <a class="page-footer__logo">
+            <svg class="page-footer__logo-image page-footer__logo-image--tablet">
+              <use xlink:href="#logo-pink-footer-tablet"></use>
+            </svg>
+            <svg class="page-footer__logo-image page-footer__logo-image--desktop">
+              <use xlink:href="#logo-pink-footer-desktop"></use>
+            </svg>
+          </a>
+          <div class="page-footer__social social">
+            <ul class="social__list">
+              <li class="social__item">
+                <a class="social__link social__link--twitter" href="#" target="_blank">Мы в Твиттере</a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy" target="_blank">Мы в Фейсбуке</a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--youtube" href="#" target="_blank">Мы на YouTube</a>
+              </li>
+            </ul>
+          </div> 
+          <div class="page-footer__developer developer">
+            <p class="developer__title">Разработано</p>
+            <a class="developer__link" href="https://htmlacademy.ru/">
+              <span class="visually-hidden">HTML Academy</span>
+              <svg class="developer__icon" width="27" height="34">
+                <use xlink:href="#logo-htmlacademy"></use>
+              </svg>
+            </a>
+          </div>
+        </div> 
+      </div> 
+    </footer>
+    <script src="js/main.min.js"></script>
   </body>
 </html>

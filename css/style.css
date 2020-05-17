@@ -422,7 +422,6 @@ input[type="radio"].visually-hidden {
   text-align: center;
   background-color: #ffffff;
   -webkit-transform: translateX(-50%) translateY(-50%);
-      -ms-transform: translateX(-50%) translateY(-50%);
           transform: translateX(-50%) translateY(-50%);
   -webkit-box-shadow: 0px 30px 50px 0px rgba(0, 0, 0, 0.3);
           box-shadow: 0px 30px 50px 0px rgba(0, 0, 0, 0.3);
@@ -478,14 +477,12 @@ input[type="radio"].visually-hidden {
   display: flex;
   width: 300%;
   -webkit-transform: translateX(0);
-      -ms-transform: translateX(0);
           transform: translateX(0);
 }
 
 .slider__list--table {
   display: table;
   -webkit-transform: translateX(-33.33%);
-      -ms-transform: translateX(-33.33%);
           transform: translateX(-33.33%);
 }
 
@@ -601,11 +598,7 @@ input[type="radio"].visually-hidden {
 
 .table__cell--body svg {
   position: absolute;
-  top: 50%;
   right: 17px;
-  -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
 }
 
 .developer {
@@ -658,11 +651,11 @@ input[type="radio"].visually-hidden {
   transition: all 0.3s;
 }
 
-.page-footer__logo-image:hover {
+.page-footer__logo[href] .page-footer__logo-image:hover {
   fill: #d22856;
 }
 
-.page-footer__logo-image:active {
+.page-footer__logo[href] .page-footer__logo-image:active {
   fill: #000000;
   opacity: 0.3;
 }
@@ -720,7 +713,6 @@ input[type="radio"].visually-hidden {
   background-repeat: no-repeat;
   background-position: 0 0;
   -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
 
@@ -1063,7 +1055,6 @@ input[type="radio"].visually-hidden {
   background-color: #fff;
   border: 2px solid #e5e5e5;
   -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
           transform: translateY(-50%);
 }
 
@@ -1086,7 +1077,6 @@ input[type="radio"].visually-hidden {
   border-top-width: 0;
   border-right-width: 0;
   -webkit-transform: rotate(-45deg);
-      -ms-transform: rotate(-45deg);
           transform: rotate(-45deg);
 }
 
@@ -1101,7 +1091,6 @@ input[type="radio"].visually-hidden {
   border-top-width: 0;
   border-right-width: 0;
   -webkit-transform: rotate(-45deg);
-      -ms-transform: rotate(-45deg);
           transform: rotate(-45deg);
 }
 
@@ -1117,7 +1106,6 @@ input[type="radio"].visually-hidden {
   left: 0;
   border-radius: 50%;
   -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
           transform: translateY(-50%);
 }
 
@@ -1275,7 +1263,6 @@ input[type="radio"].visually-hidden {
   background-repeat: no-repeat;
   background-position: 0 0;
   -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
           transform: translateX(-50%);
 }
 
@@ -1475,27 +1462,29 @@ input[type="radio"].visually-hidden {
 
 .intro__wrapper {
   position: relative;
-  padding-top: 176px;
-  padding-bottom: 30px;
+  padding-top: 465px;
 }
 
-.intro__image {
-  margin: 0;
-  margin-bottom: 28px;
-}
-
-.intro__image img {
-  display: block;
-  margin: 0 auto;
-  -webkit-transform: translateX(-30px);
-      -ms-transform: translateX(-30px);
-          transform: translateX(-30px);
+.intro__wrapper::before {
+  content: "";
+  position: absolute;
+  top: 175px;
+  left: 50%;
+  width: 257px;
+  height: 286px;
+  background-image: url("../img/index/iphone-hand-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  -webkit-transform: translateX(-60%);
+          transform: translateX(-60%);
 }
 
 .intro__inner {
   position: relative;
   z-index: 2;
   padding: 0 20px;
+  padding-top: 28px;
+  padding-bottom: 35px;
   color: #ffffff;
 }
 
@@ -1533,7 +1522,6 @@ input[type="radio"].visually-hidden {
 
 .intro__icon:hover {
   -webkit-transform: scale(1.2);
-      -ms-transform: scale(1.2);
           transform: scale(1.2);
 }
 
@@ -1615,7 +1603,6 @@ input[type="radio"].visually-hidden {
   font-size: 14px;
   font-weight: 600;
   -webkit-transform: rotate(-45deg);
-      -ms-transform: rotate(-45deg);
           transform: rotate(-45deg);
 }
 
@@ -1975,7 +1962,6 @@ input[type="radio"].visually-hidden {
   .table {
     width: 100%;
     -webkit-transform: translateX(0);
-        -ms-transform: translateX(0);
             transform: translateX(0);
   }
   .table__row--header {
@@ -2000,9 +1986,8 @@ input[type="radio"].visually-hidden {
   }
   .table__cell--body svg {
     right: 50%;
-    -webkit-transform: translate(50%, -50%);
-        -ms-transform: translate(50%, -50%);
-            transform: translate(50%, -50%);
+    -webkit-transform: translateX(50%) translateY(-50%);
+            transform: translateX(50%) translateY(-50%);
   }
   .page-footer__wrapper {
     display: -webkit-box;
@@ -2179,6 +2164,9 @@ input[type="radio"].visually-hidden {
   .form__label--contacts {
     padding-top: 10px;
   }
+  .form__text--contacts {
+    display: block;
+  }
   .form__inner-phone::after,
   .form__inner-email::after {
     content: "";
@@ -2230,7 +2218,6 @@ input[type="radio"].visually-hidden {
     height: 480px;
     background-image: url("../img/index/iphone-screen-3-tablet@1x.png");
     -webkit-transform: translateX(0);
-        -ms-transform: translateX(0);
             transform: translateX(0);
   }
   .advantages__item:last-child {
@@ -2276,16 +2263,15 @@ input[type="radio"].visually-hidden {
     padding-left: 20px;
     padding-bottom: 105px;
   }
-  .intro__image {
-    position: absolute;
+  .intro__wrapper::before {
+    content: "";
+    top: auto;
     bottom: 0;
-    right: 21px;
-    margin-bottom: 0;
-  }
-  .intro__image img {
-    -webkit-transform: translateX(0);
-        -ms-transform: translateX(0);
-            transform: translateX(0);
+    width: 480px;
+    height: 545px;
+    background-image: url("../img/index/iphone-hand-tablet@1x.png");
+    -webkit-transform: translateX(-35%);
+            transform: translateX(-35%);
   }
   .intro__inner {
     width: 300px;
@@ -2430,9 +2416,7 @@ input[type="radio"].visually-hidden {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-flex: 1;
-        -ms-flex: 1 1 50%;
-            flex: 1 1 50%;
+    width: 50%;
     padding: 0 10px;
   }
   .post__promo {
@@ -2720,21 +2704,20 @@ input[type="radio"].visually-hidden {
             justify-content: space-between;
   }
   .form__group {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 100%;
-            flex: 0 0 100%;
+    width: 100%;
   }
   .form__group--name {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 50%;
-            flex: 0 0 50%;
+    width: 50%;
+    -ms-flex-wrap: 0;
+        flex-wrap: 0;
     padding-top: 12px;
     padding-right: 35px;
   }
   .form__group--app {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 50%;
-            flex: 0 0 50%;
+        -ms-flex-positive: 0;
+            flex-grow: 0;
+    width: 50%;
     padding-top: 5px;
     padding-left: 35px;
   }
@@ -2754,9 +2737,7 @@ input[type="radio"].visually-hidden {
     margin-bottom: 52px;
   }
   .form__item--contacts {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 50%;
-            flex: 0 0 50%;
+    width: 50%;
     margin-bottom: 0;
   }
   .form__item--contacts:first-of-type {
@@ -2816,9 +2797,7 @@ input[type="radio"].visually-hidden {
         flex-wrap: wrap;
   }
   .advantages__item {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 33.33%;
-            flex: 0 0 33.33%;
+    width: 33.33%;
     padding-top: 265px;
     padding-right: 30px;
     padding-left: 30px;
@@ -2836,7 +2815,6 @@ input[type="radio"].visually-hidden {
     background-repeat: no-repeat;
     background-position: 0 0;
     -webkit-transform: translateX(-50%);
-        -ms-transform: translateX(-50%);
             transform: translateX(-50%);
   }
   .advantages__item--change--world::before {
@@ -2851,7 +2829,6 @@ input[type="radio"].visually-hidden {
     background-repeat: no-repeat;
     background-position: 0 0;
     -webkit-transform: translateX(-50%);
-        -ms-transform: translateX(-50%);
             transform: translateX(-50%);
   }
   .advantages__item--make-friends::before {
@@ -2866,7 +2843,6 @@ input[type="radio"].visually-hidden {
     background-repeat: no-repeat;
     background-position: 0 0;
     -webkit-transform: translateX(-50%);
-        -ms-transform: translateX(-50%);
             transform: translateX(-50%);
   }
   .advantages__title {
@@ -2939,8 +2915,15 @@ input[type="radio"].visually-hidden {
     padding-left: 0;
     padding-bottom: 123px;
   }
-  .intro__image {
+  .intro__wrapper::before {
+    content: "";
+    left: auto;
     right: 35px;
+    width: 568px;
+    height: 645px;
+    background-image: url("../img/index/iphone-hand-desktop@1x.png");
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
   .intro__inner {
     padding: 0;
@@ -2985,7 +2968,6 @@ input[type="radio"].visually-hidden {
     background-repeat: no-repeat;
     background-position: 0 0;
     -webkit-transform: translateX(-50%);
-        -ms-transform: translateX(-50%);
             transform: translateX(-50%);
   }
   .reviews__list {
@@ -3010,9 +2992,7 @@ input[type="radio"].visually-hidden {
     padding: 0;
   }
   .photo__item {
-    -webkit-box-flex: 1;
-        -ms-flex: 1 1 33.33%;
-            flex: 1 1 33.33%;
+    width: 33.33%;
     margin-bottom: 54px;
   }
   .post__promo {
@@ -3148,6 +3128,10 @@ input[type="radio"].visually-hidden {
     background-image: url("../img/bg-back-mobile@2x.jpg");
     background-size: 700px auto;
   }
+  .intro__wrapper::before {
+    background-image: url("../img/index/iphone-hand-mobile@2x.png");
+    background-size: 257px auto;
+  }
 }
 
 @media (min-width: 660px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 660px) and (min-resolution: 144dpi), (min-width: 660px) and (min-resolution: 1.5dppx) {
@@ -3155,11 +3139,19 @@ input[type="radio"].visually-hidden {
     background-image: url("../img/bg-back-tablet@2x.jpg");
     background-size: cover;
   }
+  .intro__wrapper::before {
+    background-image: url("../img/index/iphone-hand-tablet@1x.png");
+    background-size: 480px auto;
+  }
 }
 
 @media (min-width: 980px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 980px) and (min-resolution: 144dpi), (min-width: 980px) and (min-resolution: 1.5dppx) {
   .intro {
     background-image: url("../img/bg-back-desktop@2x.jpg");
     background-size: 2560px auto;
+  }
+  .intro__wrapper::before {
+    background-image: url("../img/index/iphone-hand-desktop@2x.png");
+    background-size: 568px auto;
   }
 }
