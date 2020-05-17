@@ -389,10 +389,17 @@ input[type="radio"].visually-hidden {
 
 .main-header {
   background-color: #283645;
-  background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center 0;
   background-size: 700px auto;
+}
+
+.webp .main-header {
+  background-image: url("../img/bg-back-mobile@1x.webp");
+}
+
+.no-webp .main-header {
+  background-image: url("../img/bg-back-mobile@1x.jpg");
 }
 
 .main-header__wrapper {
@@ -1957,8 +1964,13 @@ input[type="radio"].visually-hidden {
     display: none;
   }
   .main-header {
-    background-image: url("../img/bg-back-tablet@1x.jpg");
     background-size: 1200px auto;
+  }
+  .webp .main-header {
+    background-image: url("../img/bg-back-tablet@1x.webp");
+  }
+  .no-webp .main-header {
+    background-image: url("../img/bg-back-tablet@1x.jpg");
   }
   .main-header__wrapper {
     min-height: 440px;
@@ -2244,7 +2256,6 @@ input[type="radio"].visually-hidden {
     bottom: 0;
     width: 268px;
     height: 480px;
-    background-image: url("../img/index/iphone-screen-3-tablet@1x.png");
     -webkit-transform: translateX(0);
             transform: translateX(0);
   }
@@ -2595,8 +2606,13 @@ input[type="radio"].visually-hidden {
     display: block;
   }
   .main-header {
-    background-image: url("../img/bg-back-desktop@1x.jpg");
     background-size: 2560px auto;
+  }
+  .webp .main-header {
+    background-image: url("../img/bg-back-desktop@1x.webp");
+  }
+  .no-webp .main-header {
+    background-image: url("../img/bg-back-desktop@1x.jpg");
   }
   .main-header__wrapper {
     min-height: 395px;
@@ -3131,19 +3147,28 @@ input[type="radio"].visually-hidden {
 }
 
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx), (min-resolution: 144dpi) {
-  .main-header {
+  .webp .main-header {
+    background-image: url("../img/bg-back-mobile@2x.webp");
+  }
+  .no-webp .main-header {
     background-image: url("../img/bg-back-mobile@2x.jpg");
   }
 }
 
 @media (min-width: 660px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 660px) and (min-resolution: 1.5dppx), (min-width: 660px) and (min-resolution: 144dpi) {
-  .main-header {
+  .webp .main-header {
+    background-image: url("../img/bg-back-tablet@2x.webp");
+  }
+  .no-webp .main-header {
     background-image: url("../img/bg-back-tablet@2x.jpg");
   }
 }
 
 @media (min-width: 980px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 980px) and (min-resolution: 1.5dppx), (min-width: 980px) and (min-resolution: 144dpi) {
-  .main-header {
+  .webp .main-header {
+    background-image: url("../img/bg-back-desktop@2x.webp");
+  }
+  .no-webp .main-header {
     background-image: url("../img/bg-back-desktop@2x.jpg");
   }
 }
