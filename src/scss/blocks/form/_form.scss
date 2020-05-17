@@ -13,7 +13,8 @@
 .form__group {
 
   @media ($bp-desktop) {
-    flex: 0 0 100%;
+    // flex: 0 0 100%;
+    width: 100%;
   }
 
   &--name {
@@ -24,7 +25,9 @@
     }
 
     @media ($bp-desktop) {
-      flex: 0 0 50%;
+      // flex: 0 0 50%;
+      width: 50%;
+      flex-wrap: 0;
 
       padding-top: 12px;
       padding-right: 35px;
@@ -39,7 +42,9 @@
     }
 
     @media ($bp-desktop) {
-      flex: 0 0 50%;
+      // flex: 0 0 50%;
+      flex-grow: 0;
+      width: 50%;
 
       padding-top: 5px;
       padding-left: 35px;
@@ -151,7 +156,8 @@
     }
 
     @media ($bp-desktop) {
-      flex: 0 0 50%;
+      // flex: 0 0 50%;
+      width: 50%;
 
       margin-bottom: 0;
 
@@ -554,6 +560,11 @@
 
   &--contacts {
     padding-right: 90px;
+
+    @media ($bp-tablet) {
+      display: block;
+    }
+
   }
 }
 

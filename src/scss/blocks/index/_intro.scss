@@ -39,14 +39,52 @@
 .intro__wrapper {
   position: relative;
 
-  padding-top: 176px;
-  padding-bottom: 30px;
+  padding-top: 465px;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 175px;
+    left: 50%;
+
+    width: 257px;
+    height: 286px;
+
+    background-image: url("../img/index/iphone-hand-mobile@1x.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    transform: translateX(-60%);
+
+      @media ($retina-dpi), ($retina-dppx) {
+        background-image: url("../img/index/iphone-hand-mobile@2x.png");
+        background-size: 257px auto;
+      }
+  }
 
   @media ($bp-tablet) {
     padding-top: 200px;
     padding-right: $padding-tablet;
     padding-left: $padding-tablet;
     padding-bottom: 105px;
+
+    &::before {
+      content: "";
+
+      top: auto;
+      bottom: 0;
+
+      width: 480px;
+      height: 545px;
+
+      background-image: url("../img/index/iphone-hand-tablet@1x.png");
+      transform: translateX(-35%);
+
+      @media ($retina-dpi), ($retina-dppx) {
+        background-image: url("../img/index/iphone-hand-tablet@1x.png");
+        background-size: 480px auto;
+      }
+    }
   }
 
   @media ($bp-desktop) {
@@ -54,42 +92,62 @@
     padding-right: 0;
     padding-left: 0;
     padding-bottom: 123px;
-  }
-}
 
-.intro__image {
-  margin: 0;
-  margin-bottom: 28px;
+    &::before {
+      content: "";
 
-  img {
-    display: block;
-    margin: 0 auto;
+      left: auto;
+      right: 35px;
 
-    transform: translateX(-30px);
-  }
+      width: 568px;
+      height: 645px;
 
-  @media ($bp-tablet) {
-    position: absolute;
-    bottom: 0;
-    right: 21px;
-
-    margin-bottom: 0;
-
-    img {
+      background-image: url("../img/index/iphone-hand-desktop@1x.png");
       transform: translateX(0);
+
+      @media ($retina-dpi), ($retina-dppx) {
+        background-image: url("../img/index/iphone-hand-desktop@2x.png");
+        background-size: 568px auto;
+      }
     }
   }
-
-  @media ($bp-desktop) {
-    right: 35px;
-  }
 }
+
+// .intro__image {
+//   margin: 0;
+//   margin-bottom: 28px;
+
+//   img {
+//     display: block;
+//     margin: 0 auto;
+
+//     transform: translateX(-30px);
+//   }
+
+//   @media ($bp-tablet) {
+//     position: absolute;
+//     bottom: 0;
+//     right: 21px;
+
+//     margin-bottom: 0;
+
+//     img {
+//       transform: translateX(0);
+//     }
+//   }
+
+//   @media ($bp-desktop) {
+//     right: 35px;
+//   }
+// }
 
 .intro__inner {
   position: relative;
   z-index: 2;
 
   padding: 0 $padding-mobile;
+  padding-top: 28px;
+  padding-bottom: 35px;
 
   color: $color-white;
 
