@@ -55,9 +55,11 @@ const path = {
   src:{
     html:        ['src/**/*.html', '!src/**/_*.html'],
     scss:        'src/scss/style.scss',
-    js:          'src/js/main.js',
+    // js:          'src/js/main.js',
+    js:          'src/js/*.js',
     img:         ['src/img/**/*.{jpeg,jpg,png,gif,svg,ico}', '!src/img/svg-sprite/*.svg', '!src/img/svg-to-sass/*.svg'],
-    imgWebp:     ['src/img/**/*.{jpeg,jpg,png}', '!src/img/favicons/*.*', '!src/img/icons/*.*', '!src/img/**/bg-*.{jpeg,jpg,png}'],
+    // imgWebp:     ['src/img/**/*.{jpeg,jpg,png}', '!src/img/favicons/*.*', '!src/img/icons/*.*', '!src/img/**/bg-*.{jpeg,jpg,png}'],
+    imgWebp:     ['src/img/**/*.{jpeg,jpg,png}', '!src/img/favicons/*.*', '!src/img/icons/*.*'],
     svgSprite:   ['src/img/svg-sprite/*.svg', '!src/img/svg-sprite/sprite.svg'],
     svgToSass:   'src/img/svg-to-sass/*.svg',
     fonts:       'src/fonts/**/*.{woff,woff2}',
@@ -155,7 +157,7 @@ function image(){
 function webp(){
   return src(path.src.imgWebp)
       .pipe(newer(path.build.img))
-      .pipe(imgWebp({quality: 70}))
+      .pipe(imgWebp({quality: 75}))
       .pipe(dest(path.build.img))
       .pipe(browserSync.stream());
 };
