@@ -20,6 +20,14 @@
     display: block;
     min-width: 100%;
   }
+
+  &--main {
+    img {
+      // min-width: auto;
+      // width: auto;
+      // margin: 0 auto;
+    }
+  }
 }
 
 .photo-card__link {}

@@ -59,7 +59,9 @@ const path = {
     js:          'src/js/*.js',
     img:         ['src/img/**/*.{jpeg,jpg,png,gif,svg,ico}', '!src/img/svg-sprite/*.svg', '!src/img/svg-to-sass/*.svg'],
     // imgWebp:     ['src/img/**/*.{jpeg,jpg,png}', '!src/img/favicons/*.*', '!src/img/icons/*.*', '!src/img/**/bg-*.{jpeg,jpg,png}'],
-    imgWebp:     ['src/img/**/*.{jpeg,jpg,png}', '!src/img/favicons/*.*', '!src/img/icons/*.*'],
+    // imgWebp:     ['src/img/**/*.{jpeg,jpg,png}', '!src/img/favicons/*.*', '!src/img/icons/*.*'],
+    imgWebpJPG:     ['src/img/**/*.{jpeg,jpg}', '!src/img/favicons/*.*', '!src/img/icons/*.*'],
+    imgWebpPNG:     ['src/img/**/*.png', '!src/img/favicons/*.*', '!src/img/icons/*.*'],
     svgSprite:   ['src/img/svg-sprite/*.svg', '!src/img/svg-sprite/sprite.svg'],
     svgToSass:   'src/img/svg-to-sass/*.svg',
     fonts:       'src/fonts/**/*.{woff,woff2}',
@@ -154,10 +156,29 @@ function image(){
       .pipe(browserSync.stream());
 };
 
-function webp(){
-  return src(path.src.imgWebp)
+// function webp(){
+//   return src(path.src.imgWebp)
+//       .pipe(newer(path.build.img))
+//       .pipe(imgWebp({quality: 75}))
+//       .pipe(dest(path.build.img))
+//       .pipe(browserSync.stream());
+// };
+
+function webpJPG(){
+  return src(path.src.imgWebpJPG)
       .pipe(newer(path.build.img))
-      .pipe(imgWebp({quality: 75}))
+      .pipe(imgWebp({quality: 65}))
+      .pipe(dest(path.build.img))
+      .pipe(browserSync.stream());
+};
+
+function webpPNG(){
+  return src(path.src.imgWebpPNG)
+      .pipe(newer(path.build.img))
+      .pipe(imgWebp({
+        lossless: true,
+        nearLossless: 20
+      }))
       .pipe(dest(path.build.img))
       .pipe(browserSync.stream());
 };
@@ -230,7 +251,7 @@ function watchFiles (){
     });
   watch(path.watch.html, html);
   watch(path.watch.scss, style);
-  watch(path.watch.img, image);
+  watch(path.watch.img, parallel(image, webpJPG, webpPNG));
   watch(path.watch.js, js);
   watch(path.watch.fonts, parallel(font, fontsConvertToWoff, fontsConvertToWoff2));
   watch(path.watch.svgSprite, svgsprite);
@@ -242,7 +263,8 @@ let build =  series(clean, svgsprite, svgscss,
                 html,
                 style,
                 image,
-                webp,
+                webpJPG,
+                webpPNG,
                 js,
                 font,
                 fontsConvertToWoff,
