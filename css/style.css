@@ -1171,6 +1171,7 @@ input[type="radio"].visually-hidden {
 
 .form__text:focus {
   border-color: #d22856;
+  outline: none;
 }
 
 .form__text--contacts {
@@ -1208,6 +1209,7 @@ input[type="radio"].visually-hidden {
 
 .form__textarea:focus {
   border-color: #d22856;
+  outline: none;
 }
 
 .form__button {
@@ -1473,12 +1475,12 @@ input[type="radio"].visually-hidden {
   background-size: 700px auto;
 }
 
-.webp .intro {
-  background-image: url("../img/bg-back-mobile@1x.webp");
-}
-
 .no-webp .intro {
   background-image: url("../img/bg-back-mobile@1x.jpg");
+}
+
+.webp .intro {
+  background-image: url("../img/bg-back-mobile@1x.webp");
 }
 
 .intro__wrapper {
@@ -1568,12 +1570,12 @@ input[type="radio"].visually-hidden {
   background-size: cover;
 }
 
-.webp .map {
-  background-image: url("../img/bg-map-mobile@1x.webp");
-}
-
 .no-webp .map {
   background-image: url("../img/bg-map-mobile@1x.png");
+}
+
+.webp .map {
+  background-image: url("../img/bg-map-mobile@1x.webp");
 }
 
 .price {
@@ -2301,11 +2303,11 @@ input[type="radio"].visually-hidden {
   .intro {
     background-size: cover;
   }
-  .webp .intro {
-    background-image: url("../img/bg-back-tablet@1x.webp");
-  }
   .no-webp .intro {
     background-image: url("../img/bg-back-tablet@1x.jpg");
+  }
+  .webp .intro {
+    background-image: url("../img/bg-back-tablet@1x.webp");
   }
   .intro__wrapper {
     padding-top: 200px;
@@ -2353,11 +2355,11 @@ input[type="radio"].visually-hidden {
   .map {
     height: 380px;
   }
-  .webp .map {
-    background-image: url("../img/bg-map-tablet@1x.webp");
-  }
   .no-webp .map {
     background-image: url("../img/bg-map-tablet@1x.jpg");
+  }
+  .webp .map {
+    background-image: url("../img/bg-map-tablet@1x.webp");
   }
   .price::before {
     top: -50px;
@@ -2736,6 +2738,7 @@ input[type="radio"].visually-hidden {
   }
   .page-header__logo {
     padding-left: 0;
+    margin-right: 20px;
   }
   .page-header__logo-image--tablet {
     display: none;
@@ -2986,7 +2989,7 @@ input[type="radio"].visually-hidden {
     line-height: 30px;
   }
   .intro {
-    background-size: 2560px auto;
+    background-size: cover;
   }
   .webp .intro {
     background-image: url("../img/bg-back-desktop@1x.webp");
@@ -3034,11 +3037,11 @@ input[type="radio"].visually-hidden {
   .map {
     height: 500px;
   }
-  .webp .map {
-    background-image: url("../img/bg-map-desktop@1x.webp");
-  }
   .no-webp .map {
     background-image: url("../img/bg-map-desktop@1x.jpg");
+  }
+  .webp .map {
+    background-image: url("../img/bg-map-desktop@1x.webp");
   }
   .price::before {
     top: -66px;
@@ -3231,11 +3234,11 @@ input[type="radio"].visually-hidden {
   .intro {
     background-size: 700px auto;
   }
-  .webp .intro {
-    background-image: url("../img/bg-back-mobile@2x.webp");
-  }
   .no-webp .intro {
     background-image: url("../img/bg-back-mobile@2x.jpg");
+  }
+  .webp .intro {
+    background-image: url("../img/bg-back-mobile@2x.webp");
   }
   .intro__wrapper::before {
     background-size: 257px auto;
@@ -3252,11 +3255,11 @@ input[type="radio"].visually-hidden {
   .intro {
     background-size: cover;
   }
-  .webp .intro {
-    background-image: url("../img/bg-back-tablet@2x.webp");
-  }
   .no-webp .intro {
     background-image: url("../img/bg-back-tablet@2x.jpg");
+  }
+  .webp .intro {
+    background-image: url("../img/bg-back-tablet@2x.webp");
   }
   .intro__wrapper::before {
     background-size: 480px auto;
