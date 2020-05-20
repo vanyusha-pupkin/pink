@@ -345,6 +345,7 @@
   }
 }
 
+
 .form__label {
   position: relative;
 
@@ -413,7 +414,8 @@
     content: "";
 
     position: absolute;
-    top: 50%;
+    // top: 50%;
+    top: 0;
     left: 0;
 
     width: 39px;
@@ -422,7 +424,7 @@
     background-color: #fff;
     border: 2px solid #e5e5e5;
 
-    transform: translateY(-50%);
+    // transform: translateY(-50%);
   }
 
   & + label:hover::before{
@@ -437,7 +439,8 @@
     content: "";
 
     position: absolute;
-    top: 8px;
+    // top: 8px;
+    top: 11px;
     left: 9px;
 
     width: 20px;
@@ -455,7 +458,8 @@
     content: "";
 
     position: absolute;
-    top: 8px;
+    // top: 8px;
+    top: 11px;
     left: 9px;
 
     width: 20px;

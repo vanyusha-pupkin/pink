@@ -51,22 +51,21 @@
           <div class="photo__photo-of-day">
             <article class="photo-card">
               <h3 class="visually-hidden">Панорама дня</h3>
-              <header class="photo-card__image photo-card__image--main">
-                <a href="#" class="photo-card__link">
-                  <!-- <img  src="img/content/panorama-mobile@1x.jpg" alt=""> -->
-                  @@include('html/_picture.html', {
-                    'name-file': 'panorama', 'extension': 'jpg',
-                    'size-desktop': '980px', 'size-tablet': '660px',
-                    'alt': 'Панорама дня'
-                })
-                </a>
-              </header>
+              <a href="#" class="photo-card__link photo-card__link--main">
+                @@include('html/_picture.html', {
+                  'name-file': 'panorama', 'extension': 'jpg',
+                  'size-desktop': '980px', 'size-tablet': '660px',
+                  'alt': 'Панорама дня'
+              })
+              </a>
 
               <div class="container">
 
                 <div class="photo-card__description  photo-card__description--main">
-                  <p class="photo-card__author-name  photo-card__author-name--main">Анна</p>
-                  <p class="photo-card__date  photo-card__date--main">(5 минут назад)</p>
+                  <div class="photo-card__group">
+                    <p class="photo-card__author  photo-card__author--main">Анна</p>
+                    <p class="photo-card__date  photo-card__date--main">(5 минут назад)</p>
+                  </div>
                   <p class="photo-card__text  photo-card__text--main">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
 
                   <footer class="photo-card__like photo-card__like--main">
@@ -92,18 +91,20 @@
               <li class="photo__item">
                 <article class="photo-card">
                   <h3 class="visually-hidden">Фото автомобиля</h3>
-                  <header class="photo-card__image">
-                    <a href="#" class="photo-card__link">
-                      @@include('html/_picture.html', {
-                        'name-file': 'photo-car', 'extension': 'jpg',
-                        'size-desktop': '980px', 'size-tablet': '660px',
-                        'alt': 'Фото автомобиля'
-                      })
-                    </a>
-                  </header>
+
+                  <a href="#" class="photo-card__link">
+                    @@include('html/_picture.html', {
+                      'name-file': 'photo-car', 'extension': 'jpg',
+                      'size-desktop': '980px', 'size-tablet': '660px',
+                      'alt': 'Фото автомобиля'
+                    })
+                  </a>
+
                   <div class="photo-card__description">
-                    <p class="photo-card__author-name">Левон</p>
-                    <p class="photo-card__date">(5 часов назад)</p>
+                    <div class="photo-card__group">
+                      <p class="photo-card__author">Левон</p>
+                      <p class="photo-card__date">(5 часов назад)</p>
+                    </div>
                     <p class="photo-card__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
                     <footer class="photo-card__like">
                       <p class="photo-card__quantity-of-like">
@@ -121,18 +122,18 @@
               <li class="photo__item">
                 <article class="photo-card">
                   <h3 class="visually-hidden">Фото барабанной установки</h3>
-                  <header class="photo-card__image">
-                    <a href="#" class="photo-card__link">
-                      @@include('html/_picture.html', {
-                        'name-file': 'photo-drumset', 'extension': 'jpg',
-                        'size-desktop': '980px', 'size-tablet': '660px',
-                        'alt': 'Фото барабанной установки'
-                      })
-                    </a>
-                  </header>
+                  <a href="#" class="photo-card__link">
+                    @@include('html/_picture.html', {
+                      'name-file': 'photo-drumset', 'extension': 'jpg',
+                      'size-desktop': '980px', 'size-tablet': '660px',
+                      'alt': 'Фото барабанной установки'
+                    })
+                  </a>
                   <div class="photo-card__description">
-                    <p class="photo-card__author-name">Антон</p>
-                    <p class="photo-card__date"> (12 часов назад)</p>
+                    <div class="photo-card__group">
+                      <p class="photo-card__author">Антон</p>
+                      <p class="photo-card__date"> (12 часов назад)</p>
+                    </div>
                     <p class="photo-card__text">Соседи будут рады!</p>
                     <footer class="photo-card__like">
                       <p class="photo-card__quantity-of-like">
@@ -150,18 +151,18 @@
               <li class="photo__item">
                 <article class="photo-card">
                   <h3 class="visually-hidden">Фото стеклянной крыши</h3>
-                  <header class="photo-card__image">
-                    <a href="#" class="photo-card__link">
-                      @@include('html/_picture.html', {
-                        'name-file': 'photo-window', 'extension': 'jpg',
-                        'size-desktop': '980px', 'size-tablet': '660px',
-                        'alt': 'Фото стеклянной крыши'
-                      })
-                    </a>
-                  </header>
+                  <a href="#" class="photo-card__link">
+                    @@include('html/_picture.html', {
+                      'name-file': 'photo-window', 'extension': 'jpg',
+                      'size-desktop': '980px', 'size-tablet': '660px',
+                      'alt': 'Фото стеклянной крыши'
+                    })
+                  </a>
                   <div class="photo-card__description">
-                    <p class="photo-card__author-name">Борис</p>
-                    <p class="photo-card__date">(20 часов назад)</p>
+                    <div class="photo-card__group">
+                      <p class="photo-card__author">Борис</p>
+                      <p class="photo-card__date">(20 часов назад)</p>
+                    </div>
                     <p class="photo-card__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
                     <footer class="photo-card__like">
                       <p class="photo-card__quantity-of-like">
@@ -179,7 +180,6 @@
               <li class="photo__item">
                 <article class="photo-card">
                   <h3 class="visually-hidden">Фото рынка - Кубанская бахча</h3>
-                  <header class="photo-card__image">
                     <a href="#" class="photo-card__link">
                       @@include('html/_picture.html', {
                         'name-file': 'photo-fair', 'extension': 'jpg',
@@ -187,10 +187,11 @@
                         'alt': 'Фото рынка - Кубанская бахча'
                       })
                     </a>
-                  </header>
                   <div class="photo-card__description">
-                    <p class="photo-card__author-name">Сергей</p>
-                    <p class="photo-card__date">(25 часов назад)</p>
+                    <div class="photo-card__group">
+                      <p class="photo-card__author">Сергей</p>
+                      <p class="photo-card__date">(25 часов назад)</p>
+                    </div>
                     <p class="photo-card__text">Самая кубанская в мире!</p>
                     <footer class="photo-card__like">
                       <p class="photo-card__quantity-of-like">
@@ -208,7 +209,6 @@
               <li class="photo__item">
                 <article class="photo-card">
                   <h3 class="visually-hidden">Фото далины</h3>
-                  <header class="photo-card__image">
                     <a href="#" class="photo-card__link">
                       @@include('html/_picture.html', {
                         'name-file': 'photo-pov', 'extension': 'jpg',
@@ -216,10 +216,11 @@
                         'alt': 'Фото далины'
                       })
                     </a>
-                  </header>
                   <div class="photo-card__description">
-                    <p class="photo-card__author-name">Максим</p>
-                    <p class="photo-card__date">(40 часов назад)</p>
+                    <div class="photo-card__group">
+                      <p class="photo-card__author">Максим</p>
+                      <p class="photo-card__date">(40 часов назад)</p>
+                    </div>
                     <p class="photo-card__text">Где снег-то?</p>
                     <footer class="photo-card__like">
                       <p class="photo-card__quantity-of-like">
@@ -237,7 +238,6 @@
               <li class="photo__item">
                 <article class="photo-card">
                   <h3 class="visually-hidden">Фото крыла самолета</h3>
-                  <header class="photo-card__image">
                     <a href="#" class="photo-card__link">
                       @@include('html/_picture.html', {
                         'name-file': 'photo-wing', 'extension': 'jpg',
@@ -245,10 +245,11 @@
                         'alt': 'Фото крыла самолета'
                       })
                     </a>
-                  </header>
                   <div class="photo-card__description">
-                    <p class="photo-card__author-name">Надежда</p>
-                    <p class="photo-card__date">(45 часов назад)</p>
+                    <div class="photo-card__group">
+                      <p class="photo-card__author">Надежда</p>
+                      <p class="photo-card__date">(45 часов назад)</p>
+                    </div>
                     <p class="photo-card__text">Всем GM и взаимные лайки!</p>
                     <footer class="photo-card__like">
                       <p class="photo-card__quantity-of-like">
