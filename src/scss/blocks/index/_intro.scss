@@ -1,26 +1,8 @@
-  // .no-webp .box { color: red; }
-  // .webp .box { color: green; }
-
-// .webp .intro {
-//   background-color: red;
-// }
-
-// .no-webp .intro {
-//   background-color: green;
-// }
 
 .intro {
   background-color: $bg-color-main-image;
 
-  .webp & {
-    background-image: url("../img/bg-back-mobile@1x.webp");
-  }
-
-  .no-webp & {
-    background-image: url("../img/bg-back-mobile@1x.jpg");
-  }
-
-  // background-image: url("../img/bg-back-mobile@1x.jpg");
+  @include background-image-webp("../img/bg-back-mobile@1x", "jpg");
   background-repeat: no-repeat;
   background-position: center 0;
   background-size: cover;
@@ -28,41 +10,42 @@
 
   @media ($retina-dpi), ($retina-dppx) {
 
-    .webp & {
-      background-image: url("../img/bg-back-mobile@2x.webp");
-    }
+    // .webp & {
+    //   background-image: url("../img/bg-back-mobile@2x.webp");
+    // }
 
-    .no-webp & {
-      background-image: url("../img/bg-back-mobile@2x.jpg");
-    }
-
+    // .no-webp & {
+    //   background-image: url("../img/bg-back-mobile@2x.jpg");
+    // }
+    @include background-image-webp("../img/bg-back-mobile@2x", "jpg");
     // background-image: url("../img/bg-back-mobile@2x.jpg");
     background-size: 700px auto;
   }
 
   @media ($bp-tablet) {
 
-    .webp & {
-      background-image: url("../img/bg-back-tablet@1x.webp");
-    }
+    // .webp & {
+    //   background-image: url("../img/bg-back-tablet@1x.webp");
+    // }
 
-    .no-webp & {
-      background-image: url("../img/bg-back-tablet@1x.jpg");
-    }
+    // .no-webp & {
+    //   background-image: url("../img/bg-back-tablet@1x.jpg");
+    // }
+    @include background-image-webp("../img/bg-back-tablet@1x", "jpg");
     // background-image: url("../img/bg-back-tablet@1x.jpg");
     background-size: cover;
     // background-size: 1200px auto;
 
     @media ($retina-dpi), ($retina-dppx) {
 
-      .webp & {
-        background-image: url("../img/bg-back-tablet@2x.webp");
-      }
+      // .webp & {
+      //   background-image: url("../img/bg-back-tablet@2x.webp");
+      // }
 
-      .no-webp & {
-        background-image: url("../img/bg-back-tablet@2x.jpg");
-      }
-
+      // .no-webp & {
+      //   background-image: url("../img/bg-back-tablet@2x.jpg");
+      // }
+      @include background-image-webp("../img/bg-back-tablet@2x", "jpg");
       // background-image: url("../img/bg-back-tablet@2x.jpg");
       background-size: cover;
       // background-size: 1200px auto;
@@ -80,8 +63,8 @@
     }
 
     // background-image: url("../img/bg-back-desktop@1x.jpg");
-    // background-size: cover;
-    background-size: 2560px auto;
+    background-size: cover;
+    // background-size: 2560px auto;
 
     @media ($retina-dpi), ($retina-dppx) {
 

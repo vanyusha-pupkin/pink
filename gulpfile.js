@@ -35,10 +35,10 @@ const
   gulpif            = require('gulp-if'),                       //позволяет писать условия в gulp задачах
   newer             = require("gulp-newer"),
   rename            = require('gulp-rename'),                   //переименовывает файл
-  notify            = require('gulp-notify'),
-  plumber           = require("gulp-plumber"),
-  htmlValidator     = require('gulp-w3c-html-validator'),
-  ghPages           = require('gulp-gh-pages');
+  notify            = require('gulp-notify'),                   //вывод уведомлений
+  plumber           = require("gulp-plumber"),                  //обработчик ошибок
+  htmlValidator     = require('gulp-w3c-html-validator'),       //html - w3c валидатор
+  ghPages           = require('gulp-gh-pages');                 //размещение проекта на GitHub Pages
 
 const isDev     = (process.argv.indexOf('--dev') !== -1);
 const isProd     = !isDev;
@@ -55,11 +55,8 @@ const path = {
   src:{
     html:        ['src/**/*.html', '!src/**/_*.html'],
     scss:        'src/scss/style.scss',
-    // js:          'src/js/main.js',
-    js:          'src/js/*.js',
-    img:         ['src/img/**/*.{jpeg,jpg,png,gif,svg,ico}', '!src/img/svg-sprite/*.svg', '!src/img/svg-to-sass/*.svg'],
-    // imgWebp:     ['src/img/**/*.{jpeg,jpg,png}', '!src/img/favicons/*.*', '!src/img/icons/*.*', '!src/img/**/bg-*.{jpeg,jpg,png}'],
-    // imgWebp:     ['src/img/**/*.{jpeg,jpg,png}', '!src/img/favicons/*.*', '!src/img/icons/*.*'],
+    js:          'src/js/main.js',
+    img:         ['src/img/**/*.{jpeg,jpg,png,gif,svg,ico,xml,webmanifest}', '!src/img/svg-sprite/*.svg', '!src/img/svg-to-sass/*.svg'],
     imgWebpJPG:     ['src/img/**/*.{jpeg,jpg}', '!src/img/favicons/*.*', '!src/img/icons/*.*'],
     imgWebpPNG:     ['src/img/**/*.png', '!src/img/favicons/*.*', '!src/img/icons/*.*'],
     svgSprite:   ['src/img/svg-sprite/*.svg', '!src/img/svg-sprite/sprite.svg'],
@@ -134,7 +131,12 @@ function style(){
 function js(){
   return src(path.src.js)
       .pipe(plumber())
-      // .pipe(rigger())
+      .pipe(fileinclude(
+      // {
+      //   prefix: '@@',
+      //   basepath: '@file'
+      // }
+      ))
       .pipe(dest(path.build.js))
       .pipe(rename({ suffix: ".min" }))
       .pipe(uglify())
@@ -155,14 +157,6 @@ function image(){
       .pipe(dest(path.build.img))
       .pipe(browserSync.stream());
 };
-
-// function webp(){
-//   return src(path.src.imgWebp)
-//       .pipe(newer(path.build.img))
-//       .pipe(imgWebp({quality: 75}))
-//       .pipe(dest(path.build.img))
-//       .pipe(browserSync.stream());
-// };
 
 function webpJPG(){
   return src(path.src.imgWebpJPG)

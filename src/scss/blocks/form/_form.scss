@@ -553,6 +553,7 @@
 
   &:focus {
     border-color: $color-pink;
+    outline: none;
   }
 
   @media ($bp-tablet) {}
@@ -641,6 +642,7 @@
 
   &:focus{
     border-color: $color-pink;
+    outline: none;
   }
 
   @media ($bp-tablet) {
